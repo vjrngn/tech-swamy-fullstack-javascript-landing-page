@@ -1,768 +1,911 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-N3CC63X7');</script>
-<!-- End Google Tag Manager -->
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Tech Swamy</title>
-<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
-<!-- custom CSS -->
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="css/reset.css" rel="stylesheet">
-<link href="css/style.css" rel="stylesheet">
-<link href="css/responsive.css" rel="stylesheet">
-<link rel="stylesheet" href="css/carousel/owl.carousel.min.css">
-<link rel="stylesheet" href="css/carousel/owl.theme.default.min.css">
-<link href="css/jquery.fancybox.min.css" rel="stylesheet">
-<link href="css/animate.css" rel="stylesheet">
-<link rel="stylesheet" href="css/pro.css">
-<link rel="stylesheet" href="js/form/validationEngine.jquery.css">
-<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Teko:wght@600&display=swap" rel="stylesheet">
-<script src="js/jquery.min.js"></script>
-<script>
-     window.addEventListener('load', function()
-    {
-        url = new URL(window.location.href);
-        var campaign_name = url.searchParams.get("utm_campaign");
-        var keyword = url.searchParams.get("utm_keyword");
-        var source = url.searchParams.get("utm_source");
-        var network = url.searchParams.get("utm_network");
-        var utm_medium = url.searchParams.get("utm_medium");
-        
-        document.getElementById("campaign_url").value = window.location.href;
-        document.getElementById("campaign_name").value = campaign_name;
-        document.getElementById("keyword").value = keyword;
-        document.getElementById("sourceId").value = source;
-        document.getElementById("network").value = network;
-        document.getElementById("utm_medium").value = utm_medium;
-      
-        document.getElementById("campaign_url1").value = window.location.href;
-        document.getElementById("campaign_name1").value = campaign_name;
-        document.getElementById("keyword1").value = keyword;
-        document.getElementById("sourceId1").value = source;
-        document.getElementById("network1").value = network;
-        document.getElementById("utm_medium1").value = utm_medium;
-        
-        if (document.referrer)
-        {
-            var myReferer = document.referrer;
-            document.getElementById("referrerid").value = myReferer;
-            document.getElementById("referrerid1").value = myReferer;
-        }
-        else
-        {
-            document.getElementById("referrerid").value = 'None';
-            document.getElementById("referrerid1").value = 'None';
-        }
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-N3CC63X7');</script>
+  <!-- End Google Tag Manager -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tech Swamy</title>
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+  <!-- custom CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/reset.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/responsive.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/carousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/carousel/owl.theme.default.min.css">
+  <link href="css/jquery.fancybox.min.css" rel="stylesheet">
+  <link href="css/animate.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/pro.css">
+  <link rel="stylesheet" href="js/form/validationEngine.jquery.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Teko:wght@600&display=swap" rel="stylesheet">
+  <script src="js/jquery.min.js"></script>
+  <script>
+    window.addEventListener('load', function () {
+      url = new URL(window.location.href);
+      var campaign_name = url.searchParams.get("utm_campaign");
+      var keyword = url.searchParams.get("utm_keyword");
+      var source = url.searchParams.get("utm_source");
+      var network = url.searchParams.get("utm_network");
+      var utm_medium = url.searchParams.get("utm_medium");
+
+      document.getElementById("campaign_url").value = window.location.href;
+      document.getElementById("campaign_name").value = campaign_name;
+      document.getElementById("keyword").value = keyword;
+      document.getElementById("sourceId").value = source;
+      document.getElementById("network").value = network;
+      document.getElementById("utm_medium").value = utm_medium;
+
+      document.getElementById("campaign_url1").value = window.location.href;
+      document.getElementById("campaign_name1").value = campaign_name;
+      document.getElementById("keyword1").value = keyword;
+      document.getElementById("sourceId1").value = source;
+      document.getElementById("network1").value = network;
+      document.getElementById("utm_medium1").value = utm_medium;
+
+      if (document.referrer) {
+        var myReferer = document.referrer;
+        document.getElementById("referrerid").value = myReferer;
+        document.getElementById("referrerid1").value = myReferer;
+      }
+      else {
+        document.getElementById("referrerid").value = 'None';
+        document.getElementById("referrerid1").value = 'None';
+      }
     })
-    </script>
+  </script>
 
 </head>
+
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N3CC63X7"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-<header id="header" class="header">
-<div class="header-absolute position-absolute zIndex2 w-100">
-<div class="container">
-<div class="top-head py-2">
-<div class="row align-items-center">
-<div class="col-lg-6 col-md-6 col-sm-12">
-<div class="logo"> 
-<img class="img-fluid" src="images/logo.svg" alt="Tech Swamy"/>
-</div>
-</div>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N3CC63X7" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <header id="header" class="header">
+    <div class="header-absolute position-absolute zIndex2 w-100">
+      <div class="container">
+        <div class="top-head py-2">
+          <div class="row align-items-center">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="logo">
+                <img class="img-fluid" src="images/logo.svg" alt="Tech Swamy" />
+              </div>
+            </div>
 
-</div>
-</div>
-</div>
-</div>
-</header>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
 
-<!-- Hero section start (Slider) -->
-<section class="hero-sectionn position-relative">
- <div class="bc-img01">
-<div class="desktop star_absolute position-absolute cp-bg-move-x">
-<div class="">
-<img class="layer layer-4" src="images/bnr-icon.svg" alt="">
-</div>
-</div>
+  <!-- Hero section start (Slider) -->
+  <section class="hero-sectionn position-relative">
+    <div class="bc-img01">
+      <div class="desktop star_absolute position-absolute cp-bg-move-x">
+        <div class="">
+          <img class="layer layer-4" src="images/bnr-icon.svg" alt="">
+        </div>
+      </div>
 
-<div class="desktop icon_absolute position-absolute cp-bg-move-x">
-<div class="">
-<img class="layer layer-4" src="images/bnr-icon1.svg" alt="">
-</div>
-</div>
+      <div class="desktop icon_absolute position-absolute cp-bg-move-x">
+        <div class="">
+          <img class="layer layer-4" src="images/bnr-icon1.svg" alt="">
+        </div>
+      </div>
 
-  <div class="container">
-<div class="row position-relative zIndex2">
+      <div class="container">
+        <div class="row position-relative zIndex2">
 
-  <div class="desktop bord-rt-left"><img src="images/bodrerbtn.png" alt=""/></div>
-<div class="col-lg-12 col-md-12 desktop scene">
-<div class="position-absolute boydv jumping_ani">
-<img class="layer layer-3" data-depth="0.3" src="images/studentBnr.webp" alt=""/>
-</div>
+          <div class="desktop bord-rt-left"><img src="images/bodrerbtn.png" alt="" /></div>
+          <div class="col-lg-12 col-md-12 desktop scene">
+            <div class="position-absolute boydv jumping_ani">
+              <img class="layer layer-3" data-depth="0.3" src="images/studentBnr.webp" alt="" />
+            </div>
 
-</div>
-</div>
+          </div>
+        </div>
 
-<div class="row">
-<div class="col-lg-5 col-md-12 leftsec_content">
-<div class="dsu-addmission position-relative zIndex2">
-<div class="bannerContent">
-<div class="blob">
-<h1 class=" font-weight-700 title-anim text-red wow fadeInUp">Tech Swamy</h1>
-<p class="fs-4 title-anim my-2 wow fadeInUp" data-wow-delay="300ms">Bangalore’s latest and most advanced<br/> academy for Software engineering</p>
-</div>
-<div class="blog-text wow fadeInUp mt-4 wow fadeInUp" data-wow-delay="0ms">
-  <a class="w-50 downloadBTn text-center" data-fancybox data-touch="false" href="#downloadpop">
-    <svg width="18" height="25" viewBox="0 0 18 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.22333 1C8.97938 1 8.74542 1.09691 8.57292 1.26941C8.40042 1.44191 8.30351 1.67587 8.30351 1.91982V16.177L2.57305 10.4189C2.48759 10.3335 2.38614 10.2657 2.27448 10.2194C2.16282 10.1732 2.04314 10.1494 1.92228 10.1494C1.80142 10.1494 1.68175 10.1732 1.57009 10.2194C1.45843 10.2657 1.35697 10.3335 1.27151 10.4189C1.18605 10.5044 1.11826 10.6058 1.07201 10.7175C1.02576 10.8292 1.00195 10.9488 1.00195 11.0697C1.00195 11.1906 1.02576 11.3102 1.07201 11.4219C1.11826 11.5335 1.18605 11.635 1.27151 11.7205L8.57486 19.0238C8.61775 19.0657 8.66389 19.1041 8.71283 19.1388H8.74962L8.8692 19.2032H8.92439C8.96279 19.2187 9.00295 19.2295 9.04396 19.2354C9.10355 19.2424 9.16374 19.2424 9.22333 19.2354C9.28446 19.2422 9.34616 19.2422 9.40729 19.2354C9.44669 19.2289 9.48526 19.2181 9.52227 19.2032H9.57746L9.69703 19.1388H9.73383L9.8764 19.0238L17.1751 11.7205C17.3477 11.5479 17.4447 11.3138 17.4447 11.0697C17.4447 10.8256 17.3477 10.5915 17.1751 10.4189C17.0025 10.2463 16.7685 10.1494 16.5244 10.1494C16.2803 10.1494 16.0462 10.2463 15.8736 10.4189L10.1431 16.154V1.91982C10.1431 1.67587 10.0462 1.44191 9.87374 1.26941C9.70124 1.09691 9.46728 1 9.22333 1Z" fill="#F5185A" stroke="#F5185A"/>
-<path d="M1.91982 24.1399H16.5265C16.7705 24.1399 17.0044 24.043 17.1769 23.8705C17.3494 23.698 17.4463 23.4641 17.4463 23.2201C17.4463 22.9762 17.3494 22.7422 17.1769 22.5697C17.0044 22.3972 16.7705 22.3003 16.5265 22.3003H1.91982C1.67587 22.3003 1.44191 22.3972 1.26941 22.5697C1.09691 22.7422 1 22.9762 1 23.2201C1 23.4641 1.09691 23.698 1.26941 23.8705C1.44191 24.043 1.67587 24.1399 1.91982 24.1399Z" fill="#F5185A" stroke="#F5185A"/>
-</svg>
- Download Curriculum</a></div>
-<div class="blog-text wow fadeInUp mt-2  wow fadeInUp" data-wow-delay="300ms">
-  <a class="w-50  text-center" data-fancybox data-touch="false" href="#enquirepop">Enquire Now</a>
-</div>
-</div>
-</div>
-</div>
-
-
-</div>
-</div>
-</div>
-</section>
-<!-- Hero section end (Slider) -->
-
-<div class="text-center marquee position-relative blue-col">
-<span class="text-white"><svg width="23" height="26" viewBox="0 0 23 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M11.193 0.30818C11.2362 -0.102727 11.7637 -0.102727 11.8068 0.30818L12.1687 3.75531C12.6359 8.20649 15.7403 11.7159 19.6779 12.2441L22.7273 12.6531C23.0908 12.7019 23.0908 13.2981 22.7273 13.3469L19.6779 13.7559C15.7403 14.2841 12.6359 17.7935 12.1687 22.2446L11.8068 25.6918C11.7637 26.1027 11.2362 26.1027 11.193 25.6918L10.8312 22.2446C10.364 17.7935 7.25953 14.2841 3.32195 13.7559L0.27256 13.3469C-0.0909346 13.2981 -0.0909346 12.7019 0.27256 12.6531L3.32195 12.2441C7.25953 11.7159 10.364 8.20649 10.8312 3.75531L11.193 0.30818Z" fill="white"/>
-</svg>
- Empowering Your Tech Journey with In-Depth Knowledge, Interactive Sessions, and Real-World Projects - Where Expert Mentorship Meets Actionable Tips for Success!</span>
-</div>
+        <div class="row">
+          <div class="col-lg-5 col-md-12 leftsec_content">
+            <div class="dsu-addmission position-relative zIndex2">
+              <div class="bannerContent">
+                <div class="blob">
+                  <h1 class=" font-weight-700 title-anim text-red wow fadeInUp">Tech Swamy</h1>
+                  <p class="fs-4 title-anim my-2 wow fadeInUp" data-wow-delay="300ms">Bangalore’s latest and most
+                    advanced<br /> academy for Software engineering</p>
+                </div>
+                <div class="blog-text wow fadeInUp mt-4 wow fadeInUp" data-wow-delay="0ms">
+                  <a class="w-50 downloadBTn text-center" data-fancybox data-touch="false" href="#downloadpop">
+                    <svg width="18" height="25" viewBox="0 0 18 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M9.22333 1C8.97938 1 8.74542 1.09691 8.57292 1.26941C8.40042 1.44191 8.30351 1.67587 8.30351 1.91982V16.177L2.57305 10.4189C2.48759 10.3335 2.38614 10.2657 2.27448 10.2194C2.16282 10.1732 2.04314 10.1494 1.92228 10.1494C1.80142 10.1494 1.68175 10.1732 1.57009 10.2194C1.45843 10.2657 1.35697 10.3335 1.27151 10.4189C1.18605 10.5044 1.11826 10.6058 1.07201 10.7175C1.02576 10.8292 1.00195 10.9488 1.00195 11.0697C1.00195 11.1906 1.02576 11.3102 1.07201 11.4219C1.11826 11.5335 1.18605 11.635 1.27151 11.7205L8.57486 19.0238C8.61775 19.0657 8.66389 19.1041 8.71283 19.1388H8.74962L8.8692 19.2032H8.92439C8.96279 19.2187 9.00295 19.2295 9.04396 19.2354C9.10355 19.2424 9.16374 19.2424 9.22333 19.2354C9.28446 19.2422 9.34616 19.2422 9.40729 19.2354C9.44669 19.2289 9.48526 19.2181 9.52227 19.2032H9.57746L9.69703 19.1388H9.73383L9.8764 19.0238L17.1751 11.7205C17.3477 11.5479 17.4447 11.3138 17.4447 11.0697C17.4447 10.8256 17.3477 10.5915 17.1751 10.4189C17.0025 10.2463 16.7685 10.1494 16.5244 10.1494C16.2803 10.1494 16.0462 10.2463 15.8736 10.4189L10.1431 16.154V1.91982C10.1431 1.67587 10.0462 1.44191 9.87374 1.26941C9.70124 1.09691 9.46728 1 9.22333 1Z"
+                        fill="#F5185A" stroke="#F5185A" />
+                      <path
+                        d="M1.91982 24.1399H16.5265C16.7705 24.1399 17.0044 24.043 17.1769 23.8705C17.3494 23.698 17.4463 23.4641 17.4463 23.2201C17.4463 22.9762 17.3494 22.7422 17.1769 22.5697C17.0044 22.3972 16.7705 22.3003 16.5265 22.3003H1.91982C1.67587 22.3003 1.44191 22.3972 1.26941 22.5697C1.09691 22.7422 1 22.9762 1 23.2201C1 23.4641 1.09691 23.698 1.26941 23.8705C1.44191 24.043 1.67587 24.1399 1.91982 24.1399Z"
+                        fill="#F5185A" stroke="#F5185A" />
+                    </svg>
+                    Download Curriculum</a>
+                </div>
+                <div class="blog-text wow fadeInUp mt-2  wow fadeInUp" data-wow-delay="300ms">
+                  <a class="w-50  text-center" data-fancybox data-touch="false" href="#enquirepop">Enquire Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
 
 
-<section class="position-relative benefits-section py-5">
-<div class="container">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Hero section end (Slider) -->
 
-
-<div class="row align-items-center">
-  <div class="col-lg-5 col-md-6 col-sm-12 order-md-2 text-end" data-tilt>
-    <img class="img-fluid" src="images/bootcamp.svg" alt=""/>
+  <div class="text-center marquee position-relative blue-col">
+    <span class="text-white"><svg width="23" height="26" viewBox="0 0 23 26" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M11.193 0.30818C11.2362 -0.102727 11.7637 -0.102727 11.8068 0.30818L12.1687 3.75531C12.6359 8.20649 15.7403 11.7159 19.6779 12.2441L22.7273 12.6531C23.0908 12.7019 23.0908 13.2981 22.7273 13.3469L19.6779 13.7559C15.7403 14.2841 12.6359 17.7935 12.1687 22.2446L11.8068 25.6918C11.7637 26.1027 11.2362 26.1027 11.193 25.6918L10.8312 22.2446C10.364 17.7935 7.25953 14.2841 3.32195 13.7559L0.27256 13.3469C-0.0909346 13.2981 -0.0909346 12.7019 0.27256 12.6531L3.32195 12.2441C7.25953 11.7159 10.364 8.20649 10.8312 3.75531L11.193 0.30818Z"
+          fill="white" />
+      </svg>
+      Empowering Your Tech Journey with In-Depth Knowledge, Interactive Sessions, and Real-World Projects - Where Expert
+      Mentorship Meets Actionable Tips for Success!</span>
   </div>
 
-  <div class="col-lg-7 col-md-6 col-sm-12 order-md-1">
-    <div class="widget-title mb-4">
-<span class="d-block title-anim text-uppercase fs-5 fw-bolder text-orange mb-2">Upcoming Bootcamp - 27<sup>th</sup> Jan 2024</span>  
-<h2 class="fs-1 text-red title-anim">Fullstack Javascript Bootcamp</h2>
-</div>
 
-    <h4 class="d-block title-anim fs-4 text-dark mb-3">Launch your Coding Career
-<span class="d-block text-red mt-1">Beginner to Pro in One Intensive Bootcamp!!</span></h4>
-    <p class="lh-base mt-3">Designed especially for beginners, our one of a kind <b>offline</b> program offers hyper-personalized guidance, hands-on projects, and a community learning experience. A comprehensive career-ready strategy that includes real-time guidance through an exclusive mentorship program worth 1.5L, ensures your success as a software developer.</p>
+  <section class="position-relative benefits-section py-5">
+    <div class="container">
 
-    <div class="row">
-      <div class="col-lg-6 col-md-6 mt-3">
-        <p class="fs-6"> <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="17" cy="17" r="16.5" fill="white" stroke="black"/>
-<g clip-path="url(#clip0_1_757)">
-<path d="M23 9H24.0049C25.1068 9 26 9.89451 26 10.9941V23.0059C26 24.1072 25.1074 25 24.0049 25H9.99509C8.89323 25 8 24.1055 8 23.0059V10.9941C8 9.89277 8.89262 9 9.99509 9H11V7.49048C11 7.21959 11.2319 7 11.5 7C11.7761 7 12 7.21506 12 7.49048V9H22V7.49048C22 7.21959 22.2319 7 22.5 7C22.7761 7 23 7.21506 23 7.49048V9ZM23 10V10.5095C23 10.7804 22.7681 11 22.5 11C22.2239 11 22 10.7849 22 10.5095V10H12V10.5095C12 10.7804 11.7681 11 11.5 11C11.2239 11 11 10.7849 11 10.5095V10H9.99509C9.44505 10 9 10.4449 9 10.9941V23.0059C9 23.5538 9.44614 24 9.99509 24H24.0049C24.5549 24 25 23.5551 25 23.0059V10.9941C25 10.4462 24.5539 10 24.0049 10H23ZM9 12H25V13H9V12ZM21 15.5047C21 15.226 21.214 15 21.5047 15H22.4953C22.774 15 23 15.214 23 15.5047V16.4953C23 16.774 22.786 17 22.4953 17H21.5047C21.226 17 21 16.786 21 16.4953V15.5047ZM16 15.5047C16 15.226 16.214 15 16.5047 15H17.4953C17.774 15 18 15.214 18 15.5047V16.4953C18 16.774 17.786 17 17.4953 17H16.5047C16.226 17 16 16.786 16 16.4953V15.5047ZM11 15.5047C11 15.226 11.214 15 11.5047 15H12.4953C12.774 15 13 15.214 13 15.5047V16.4953C13 16.774 12.786 17 12.4953 17H11.5047C11.226 17 11 16.786 11 16.4953V15.5047ZM11 20.5047C11 20.226 11.214 20 11.5047 20H12.4953C12.774 20 13 20.214 13 20.5047V21.4953C13 21.774 12.786 22 12.4953 22H11.5047C11.226 22 11 21.786 11 21.4953V20.5047ZM16 20.5047C16 20.226 16.214 20 16.5047 20H17.4953C17.774 20 18 20.214 18 20.5047V21.4953C18 21.774 17.786 22 17.4953 22H16.5047C16.226 22 16 21.786 16 21.4953V20.5047ZM21 20.5047C21 20.226 21.214 20 21.5047 20H22.4953C22.774 20 23 20.214 23 20.5047V21.4953C23 21.774 22.786 22 22.4953 22H21.5047C21.226 22 21 21.786 21 21.4953V20.5047Z" fill="#F5185A"/>
-</g>
-<defs>
-<clipPath id="clip0_1_757">
-<rect width="18" height="22.5" fill="white" transform="translate(8 7)"/>
-</clipPath>
-</defs>
-</svg>  27<sup>th</sup> January 2024</p>
-      </div>
 
-      <div class="col-lg-6 col-md-6 mt-3">
-        <p class="fs-6"> <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="17" cy="17" r="16.5" fill="white" stroke="black"/>
-<path d="M17 7C11.475 7 7 11.475 7 17C7 22.525 11.475 27 17 27C22.525 27 27 22.525 27 17C27 11.475 22.525 7 17 7ZM17 25.625C12.25 25.625 8.375 21.75 8.375 17C8.375 12.25 12.25 8.375 17 8.375C21.75 8.375 25.625 12.25 25.625 17C25.625 21.75 21.75 25.625 17 25.625Z" fill="#F5185A"/>
-<path d="M23.7492 16.3252H17.6742V10.5502C17.6742 10.1752 17.3742 9.87524 16.9992 9.87524C16.6242 9.87524 16.3242 10.1752 16.3242 10.5502V17.0002C16.3242 17.3752 16.6242 17.6752 16.9992 17.6752C17.0492 17.6752 17.0992 17.6502 17.1492 17.6502C17.1992 17.6502 17.2492 17.6752 17.2992 17.6752H23.7492C24.1242 17.6752 24.4242 17.3752 24.4242 17.0002C24.4242 16.6252 24.1242 16.3252 23.7492 16.3252Z" fill="#F5185A"/>
-</svg>
- 9 am to 5 pm Saturday and Sunday</p>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-lg-6 col-md-6 mt-3">
-        <p class="fs-6"> <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="17" cy="17" r="16.5" fill="white" stroke="black"/>
-<path d="M7 22.6481V24.664C7 24.7531 7.0346 24.8386 7.09618 24.9016C7.15776 24.9646 7.24128 25 7.32837 25H26.6716C26.7587 25 26.8422 24.9646 26.9038 24.9016C26.9654 24.8386 27 24.7531 27 24.664V22.6481C26.9984 21.8862 26.763 21.144 26.327 20.5263C25.891 19.9086 25.2764 19.4466 24.5701 19.2054C25.1383 18.9422 25.6012 18.4878 25.8819 17.9179C26.1626 17.348 26.2441 16.6969 26.1129 16.0731C25.9816 15.4492 25.6455 14.8901 25.1605 14.4888C24.6754 14.0876 24.0707 13.8684 23.447 13.8677C23.377 13.8677 23.3091 13.8677 23.2391 13.8677C22.8049 13.1485 22.1379 12.6079 21.3542 12.3401C21.9223 12.0759 22.3849 11.6205 22.665 11.0498C22.9451 10.4792 23.0258 9.82761 22.8936 9.20351C22.7615 8.57942 22.4245 8.02043 21.9387 7.61953C21.4529 7.21863 20.8476 7 20.2235 7C19.5994 7 18.9941 7.21863 18.5083 7.61953C18.0225 8.02043 17.6855 8.57942 17.5534 9.20351C17.4213 9.82761 17.5019 10.4792 17.782 11.0498C18.0621 11.6205 18.5247 12.0759 19.0928 12.3401C18.3114 12.6128 17.6483 13.1574 17.2189 13.8789C17.1511 13.8789 17.081 13.8789 17 13.8789C16.919 13.8789 16.8643 13.8789 16.7964 13.8789L16.722 13.7669C16.2843 13.1037 15.6448 12.6068 14.9028 12.3536C15.4716 12.0899 15.9349 11.6349 16.2157 11.0642C16.4964 10.4936 16.5777 9.84172 16.4459 9.21723C16.3141 8.59274 15.9772 8.03328 15.4913 7.63202C15.0054 7.23076 14.3998 7.01191 13.7754 7.01191C13.151 7.01191 12.5454 7.23076 12.0595 7.63202C11.5736 8.03328 11.2367 8.59274 11.1049 9.21723C10.9731 9.84172 11.0543 10.4936 11.3351 11.0642C11.6159 11.6349 12.0792 12.0899 12.648 12.3536C11.8637 12.6212 11.1959 13.1618 10.7609 13.8812C10.6931 13.8812 10.623 13.8812 10.553 13.8812C9.92925 13.8818 9.32456 14.101 8.83953 14.5023C8.3545 14.9035 8.01838 15.4626 7.88712 16.0865C7.75585 16.7104 7.83735 17.3615 8.11806 17.9314C8.39876 18.5013 8.86174 18.9556 9.42995 19.2188C8.72567 19.4593 8.11262 19.9192 7.67683 20.5343C7.24103 21.1493 7.00435 21.8885 7 22.6481ZM14.1038 22.6481C14.1245 21.8766 14.4386 21.1438 14.9793 20.6055C15.52 20.0673 16.2446 19.7662 16.9989 19.7662C17.7532 19.7662 18.4778 20.0673 19.0185 20.6055C19.5592 21.1438 19.8733 21.8766 19.894 22.6481V24.3303H14.1038V22.6481ZM26.3411 22.6481V24.3303H20.553V22.6481C20.5737 21.8766 20.8878 21.1438 21.4285 20.6055C21.9692 20.0673 22.6938 19.7662 23.4481 19.7662C24.2025 19.7662 24.927 20.0673 25.4677 20.6055C26.0084 21.1438 26.3225 21.8766 26.3433 22.6481H26.3411ZM25.5223 16.6609C25.5228 17.081 25.4014 17.4917 25.1736 17.8412C24.9459 18.1907 24.6219 18.4632 24.2427 18.6243C23.8636 18.7853 23.4462 18.8277 23.0435 18.746C22.6408 18.6643 22.2708 18.4623 21.9803 18.1654C21.6899 17.8685 21.492 17.4902 21.4118 17.0782C21.3315 16.6662 21.3725 16.2392 21.5295 15.851C21.6865 15.4629 21.9525 15.1311 22.2938 14.8977C22.6351 14.6643 23.0365 14.5397 23.447 14.5397C23.9969 14.5403 24.5241 14.7639 24.9131 15.1615C25.3021 15.5591 25.5212 16.0983 25.5223 16.6609ZM18.1493 9.80906C18.1493 9.38908 18.271 8.97854 18.4991 8.62935C18.7271 8.28015 19.0512 8.00799 19.4304 7.84727C19.8096 7.68656 20.2269 7.64451 20.6295 7.72644C21.032 7.80837 21.4018 8.01061 21.6921 8.30757C21.9823 8.60454 22.18 8.9829 22.26 9.3948C22.3401 9.8067 22.299 10.2336 22.1419 10.6217C21.9849 11.0097 21.7189 11.3413 21.3776 11.5746C21.0363 11.8079 20.6351 11.9325 20.2246 11.9325C19.6744 11.9319 19.1469 11.708 18.7578 11.3099C18.3687 10.9118 18.1499 10.372 18.1493 9.80906ZM20.2246 12.8352C20.6752 12.8342 21.1196 12.9417 21.522 13.1491C21.9243 13.3565 22.2733 13.658 22.5407 14.029C22.0259 14.2129 21.5768 14.5507 21.2515 14.9985C20.9262 15.4464 20.7397 15.9838 20.7162 16.5413C20.6926 17.0987 20.833 17.6506 21.1192 18.1256C21.4055 18.6005 21.8244 18.9767 22.3218 19.2054C21.862 19.3637 21.4386 19.6164 21.0777 19.9481C20.7167 20.2797 20.4256 20.6832 20.2224 21.1339C20.019 20.6836 19.7278 20.2805 19.3668 19.9493C19.0059 19.6181 18.5826 19.3657 18.123 19.2076C18.6204 18.9789 19.0394 18.6027 19.3256 18.1278C19.6118 17.6529 19.7522 17.101 19.7287 16.5435C19.7051 15.986 19.5186 15.4486 19.1934 15.0008C18.8681 14.5529 18.419 14.2152 17.9041 14.0313C18.1717 13.6592 18.5213 13.357 18.9245 13.1491C19.3277 12.9413 19.7731 12.8337 20.2246 12.8352ZM19.0753 16.6609C19.0757 17.081 18.9544 17.4917 18.7266 17.8412C18.4988 18.1907 18.1749 18.4632 17.7957 18.6243C17.4165 18.7853 16.9992 18.8277 16.5965 18.746C16.1938 18.6643 15.8238 18.4623 15.5333 18.1654C15.2429 17.8685 15.045 17.4902 14.9647 17.0782C14.8845 16.6662 14.9254 16.2392 15.0825 15.851C15.2395 15.4629 15.5055 15.1311 15.8468 14.8977C16.1881 14.6643 16.5894 14.5397 17 14.5397C17.5498 14.5403 18.077 14.7639 18.4661 15.1615C18.8551 15.5591 19.0741 16.0983 19.0753 16.6609ZM11.7023 9.80906C11.7023 9.38908 11.824 8.97854 12.052 8.62935C12.2801 8.28015 12.6042 8.00799 12.9834 7.84727C13.3626 7.68656 13.7799 7.64451 14.1825 7.72644C14.585 7.80837 14.9548 8.01061 15.245 8.30757C15.5353 8.60454 15.7329 8.9829 15.813 9.3948C15.8931 9.8067 15.852 10.2336 15.6949 10.6217C15.5378 11.0097 15.2718 11.3413 14.9306 11.5746C14.5893 11.8079 14.188 11.9325 13.7776 11.9325C13.2274 11.9319 12.6998 11.708 12.3108 11.3099C11.9217 10.9118 11.7029 10.372 11.7023 9.80906ZM13.7776 12.8352C14.2279 12.8358 14.6718 12.944 15.0739 13.1513C15.476 13.3586 15.8252 13.6591 16.0937 14.029C15.5797 14.2138 15.1315 14.5519 14.807 14.9997C14.4824 15.4475 14.2964 15.9845 14.2728 16.5414C14.2493 17.0984 14.3893 17.6498 14.6748 18.1246C14.9603 18.5994 15.3783 18.9758 15.8748 19.2054C15.415 19.3637 14.9916 19.6164 14.6306 19.9481C14.2696 20.2797 13.9786 20.6832 13.7754 21.1339C13.5719 20.6836 13.2808 20.2805 12.9198 19.9493C12.5588 19.6181 12.1356 19.3657 11.676 19.2076C12.1725 18.9781 12.5905 18.6017 12.876 18.1268C13.1615 17.652 13.3015 17.1006 13.2779 16.5437C13.2544 15.9867 13.0684 15.4497 12.7438 15.0019C12.4193 14.5542 11.9711 14.2161 11.4571 14.0313C11.7249 13.6594 12.0746 13.3574 12.4777 13.1496C12.8809 12.9418 13.3262 12.8341 13.7776 12.8352ZM8.47767 16.6609C8.47767 16.2409 8.59939 15.8304 8.82742 15.4812C9.05546 15.132 9.37958 14.8598 9.75879 14.6991C10.138 14.5384 10.5553 14.4963 10.9578 14.5783C11.3604 14.6602 11.7302 14.8624 12.0204 15.1594C12.3107 15.4564 12.5083 15.8347 12.5884 16.2466C12.6685 16.6585 12.6274 17.0855 12.4703 17.4735C12.3132 17.8615 12.0472 18.1931 11.706 18.4264C11.3647 18.6598 10.9634 18.7843 10.553 18.7843C10.0027 18.7837 9.47522 18.5598 9.08615 18.1617C8.69708 17.7636 8.47825 17.2239 8.47767 16.6609ZM10.553 19.687C11.3202 19.6882 12.0556 20.0005 12.5981 20.5556C13.1406 21.1106 13.4459 21.8631 13.447 22.6481V24.3303H7.65674V22.6481C7.6579 21.8627 7.96348 21.1099 8.50644 20.5548C9.0494 19.9997 9.7854 19.6876 10.553 19.687Z" fill="#F5185A" stroke="#F5185A" stroke-width="0.2"/>
-</svg>
-   20 weeks (approx 5 months)</p>
-      </div>
-
-      <div class="col-lg-6 col-md-6 mt-3">
-        <p class="fs-6"> <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="17" cy="17" r="16.5" fill="white" stroke="black"/>
-<path d="M17 18C19.2057 18 21 16.2057 21 14C21 11.7943 19.2057 10 17 10C14.7943 10 13 11.7943 13 14C13 16.2057 14.7943 18 17 18ZM17 10.675C18.8334 10.675 20.325 12.1666 20.325 14C20.325 15.8334 18.8334 17.325 17 17.325C15.1666 17.325 13.675 15.8334 13.675 14C13.675 12.1666 15.1666 10.675 17 10.675Z" fill="#F5185A" stroke="#F5185A" stroke-width="0.4"/>
-<path d="M16.7387 27.8966C16.8115 27.9655 16.9058 28 17 28C17.0942 28 17.1885 27.9655 17.2613 27.8966C20.1238 25.1836 23.6883 19.9556 24.6997 15.9027C24.8284 15.3799 25 14.5944 25 13.8138C25 9.50539 21.4111 6 17 6C12.5889 6 9 9.50503 9 13.8134C9 14.5941 9.17156 15.3795 9.30033 15.9035C10.3117 19.9559 13.8762 25.1836 16.7383 27.8966H16.7387ZM17 6.73298C20.997 6.73298 24.2492 9.90947 24.2492 13.8134C24.2492 14.5163 24.0896 15.2442 23.9699 15.73C23.0216 19.5317 19.7375 24.4154 17 27.1174C14.2625 24.4158 10.9784 19.5321 10.0301 15.7311C9.91037 15.2446 9.75082 14.5163 9.75082 13.8138C9.75082 9.90983 13.003 6.73298 17 6.73298Z" fill="#F5185A" stroke="#F5185A" stroke-width="0.4"/>
-</svg>
-  Tech Swamy Bangalore</p>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-
-<section class="position-relative campus-section light-col py-4">
-<div class="container">
-<div class="position-relative zIndex2">
-<div class="widget-title mb-4">
-<h2 class="fs-1 text-red title-anim">What We Offer?</h2>
-</div>
-
-<div class="position-relative px-4">
-  <div class="owl-carousel owl-theme" id="ticker-slider">
-    <div class="ticker_item position-relative wow fadeInUp">
-      <div class="ticker_front">
-        <div class="ticker_icon">
-       <svg width="48" height="39" viewBox="0 0 48 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M6.30003 19.7001H41.8C42.7 19.7001 43.5 19.1001 43.7 18.2001L47 6.40012C46.5 5.90012 45.8 5.60012 45 5.60012H33.8L32.7 1.10012C32.5 0.500122 32 0.00012207 31.3 0.00012207H16.7C16 0.00012207 15.5 0.400122 15.3 1.10012L14.2 5.60012H3.00003C2.20003 5.60012 1.50003 5.90012 1.00003 6.40012L4.40003 18.3001C4.60003 19.1001 5.40003 19.7001 6.30003 19.7001ZM17.8 2.80012H30.2L30.9 5.50012H17.1L17.8 2.80012Z" fill="#F5185A"/>
-<path d="M22.2 28.9001H25.9C26.5 28.9001 26.9 28.5001 26.9 27.9001V21.7001H21.2V27.9001C21.2 28.5001 21.6 28.9001 22.2 28.9001Z" fill="#F5185A"/>
-<path d="M45.6 18.8002C45.1 20.5002 43.5 21.7002 41.8 21.7002H28.8V27.9002C28.8 29.6002 27.5 30.9002 25.8 30.9002H22.1C20.4 30.9002 19.1 29.6002 19.1 27.9002V21.7002H6.30003C4.50003 21.7002 2.90003 20.5002 2.50003 18.8002L3.05176e-05 10.3002V35.7002C3.05176e-05 37.4002 1.30003 38.7002 3.00003 38.7002H45C46.7 38.7002 48 37.4002 48 35.7002V10.3002L45.6 18.8002Z" fill="#F5185A"/>
-</svg>
-</div>
-        <div class="ticker_front-content mt-4"><h4 class="fs-5">Hyper-Personalized<br/> Mentoring</h4></div>
-      </div>
-
-      <div class="ticker_back">
-        <div class="text-center icon__back">
-        <svg width="48" height="39" viewBox="0 0 48 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M6.30003 19.7001H41.8C42.7 19.7001 43.5 19.1001 43.7 18.2001L47 6.40012C46.5 5.90012 45.8 5.60012 45 5.60012H33.8L32.7 1.10012C32.5 0.500122 32 0.00012207 31.3 0.00012207H16.7C16 0.00012207 15.5 0.400122 15.3 1.10012L14.2 5.60012H3.00003C2.20003 5.60012 1.50003 5.90012 1.00003 6.40012L4.40003 18.3001C4.60003 19.1001 5.40003 19.7001 6.30003 19.7001ZM17.8 2.80012H30.2L30.9 5.50012H17.1L17.8 2.80012Z" fill="#FFFFFF"/>
-<path d="M22.2 28.9001H25.9C26.5 28.9001 26.9 28.5001 26.9 27.9001V21.7001H21.2V27.9001C21.2 28.5001 21.6 28.9001 22.2 28.9001Z" fill="#FFFFFF"/>
-<path d="M45.6 18.8002C45.1 20.5002 43.5 21.7002 41.8 21.7002H28.8V27.9002C28.8 29.6002 27.5 30.9002 25.8 30.9002H22.1C20.4 30.9002 19.1 29.6002 19.1 27.9002V21.7002H6.30003C4.50003 21.7002 2.90003 20.5002 2.50003 18.8002L3.05176e-05 10.3002V35.7002C3.05176e-05 37.4002 1.30003 38.7002 3.00003 38.7002H45C46.7 38.7002 48 37.4002 48 35.7002V10.3002L45.6 18.8002Z" fill="#FFFFFF"/>
-</svg>
-</div>
-        <h5 class="fs-5">Hyper-Personalized<br/> Mentoring</h5>
-        <p>The advantage of having one consistent trainer throughout your
-journey is getting a super personalised learning experience via:
-1. Consistency in teaching methods. 2. Trainer being aware of
-your grasping abilities and growth potential.
-3. Tailored career guidance as per your needs.
-</p>
-      </div>
-    </div>
-
-    <div class="ticker_item position-relative wow fadeInUp" data-wow-delay="300ms">
-      <div class="ticker_front">
-        <div class="ticker_icon">
-        <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M54 50.625V53.1562C54 53.6203 53.6203 54 53.1562 54H32.0625C31.5984 54 31.2188 53.6203 31.2188 53.1562V50.625C31.2188 46.9041 34.2478 43.875 37.9688 43.875H47.25C50.9709 43.875 54 46.9041 54 50.625Z" fill="#F5185A"/>
-<path d="M42.6094 42.1875C46.5703 42.1875 49.7812 38.9765 49.7812 35.0156C49.7812 31.0547 46.5703 27.8438 42.6094 27.8438C38.6485 27.8438 35.4375 31.0547 35.4375 35.0156C35.4375 38.9765 38.6485 42.1875 42.6094 42.1875Z" fill="#F5185A"/>
-<path d="M11.8125 26.1562C15.7734 26.1562 18.9844 22.9453 18.9844 18.9844C18.9844 15.0235 15.7734 11.8125 11.8125 11.8125C7.85158 11.8125 4.64062 15.0235 4.64062 18.9844C4.64062 22.9453 7.85158 26.1562 11.8125 26.1562Z" fill="#F5185A"/>
-<path d="M26.5781 35.8594H22.7812C21.8489 35.8594 21.0938 35.1042 21.0938 34.1719V31.6406C21.0938 29.3161 19.1995 27.4219 16.875 27.4219H4.21875C1.89422 27.4219 0 29.3161 0 31.6406V42.6094C0 44.4698 1.51453 45.9844 3.375 45.9844V53.1562C3.375 53.6203 3.75469 54 4.21875 54H19.4062C19.8703 54 20.25 53.6203 20.25 53.1562V43.4531H26.5781C28.6706 43.4531 30.375 41.7487 30.375 39.6562C30.375 37.5638 28.6706 35.8594 26.5781 35.8594ZM13.0781 45.9844H6.32812C5.86406 45.9844 5.48438 45.6047 5.48438 45.1406C5.48438 44.6766 5.86406 44.2969 6.32812 44.2969H13.0781C14.2425 44.2969 15.1875 43.3519 15.1875 42.1875C15.1875 41.0231 14.2425 40.0781 13.0781 40.0781H6.75C6.28594 40.0781 5.90625 39.6984 5.90625 39.2344C5.90625 38.7703 6.28594 38.3906 6.75 38.3906H13.0781C15.1706 38.3906 16.875 40.095 16.875 42.1875C16.875 44.28 15.1706 45.9844 13.0781 45.9844Z" fill="#F5185A"/>
-<path d="M41.3438 0H23.625C22.2286 0 21.0938 1.13484 21.0938 2.53125V13.5C21.0938 14.8964 22.2286 16.0312 23.625 16.0312V18.2123C23.625 19.3345 24.5405 20.25 25.6627 20.25C26.1984 20.25 26.7258 20.0306 27.1012 19.6509L30.7252 16.0312H41.3438C42.7402 16.0312 43.875 14.8964 43.875 13.5V2.53125C43.875 1.13484 42.7402 0 41.3438 0ZM37.5469 10.9688H27.4219C26.9578 10.9688 26.5781 10.5891 26.5781 10.125C26.5781 9.66094 26.9578 9.28125 27.4219 9.28125H37.5469C38.0109 9.28125 38.3906 9.66094 38.3906 10.125C38.3906 10.5891 38.0109 10.9688 37.5469 10.9688ZM37.5469 6.75H27.4219C26.9578 6.75 26.5781 6.37031 26.5781 5.90625C26.5781 5.44219 26.9578 5.0625 27.4219 5.0625H37.5469C38.0109 5.0625 38.3906 5.44219 38.3906 5.90625C38.3906 6.37031 38.0109 6.75 37.5469 6.75Z" fill="#F5185A"/>
-<path d="M32.9058 26.1562V30.7968C32.9058 31.2609 32.5261 31.6406 32.0621 31.6406H27.4214C26.9574 31.6406 26.5777 31.2609 26.5777 30.7968C26.5777 30.3328 26.9574 29.9531 27.4214 29.9531H30.0244L24.9282 24.8526C24.5949 24.5236 24.5949 23.992 24.9282 23.6629C25.2572 23.3296 25.7888 23.3296 26.1178 23.6629L31.2183 28.7592V26.1562C31.2183 25.6921 31.598 25.3125 32.0621 25.3125C32.5261 25.3125 32.9058 25.6921 32.9058 26.1562Z" fill="#F5185A"/>
-</svg>
-</div>
-
-        <div class="ticker_front-content mt-4"><h4 class="fs-5">Real time App development along
-side VIJAY & 6+ Projects</h4></div>
-      </div>
-
-      <div class="ticker_back">
-        <div class="text-center icon__back">
-        <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M54 50.625V53.1562C54 53.6203 53.6203 54 53.1562 54H32.0625C31.5984 54 31.2188 53.6203 31.2188 53.1562V50.625C31.2188 46.9041 34.2478 43.875 37.9688 43.875H47.25C50.9709 43.875 54 46.9041 54 50.625Z" fill="#FFFFFF"/>
-<path d="M42.6094 42.1875C46.5703 42.1875 49.7812 38.9765 49.7812 35.0156C49.7812 31.0547 46.5703 27.8438 42.6094 27.8438C38.6485 27.8438 35.4375 31.0547 35.4375 35.0156C35.4375 38.9765 38.6485 42.1875 42.6094 42.1875Z" fill="#FFFFFF"/>
-<path d="M11.8125 26.1562C15.7734 26.1562 18.9844 22.9453 18.9844 18.9844C18.9844 15.0235 15.7734 11.8125 11.8125 11.8125C7.85158 11.8125 4.64062 15.0235 4.64062 18.9844C4.64062 22.9453 7.85158 26.1562 11.8125 26.1562Z" fill="#FFFFFF"/>
-<path d="M26.5781 35.8594H22.7812C21.8489 35.8594 21.0938 35.1042 21.0938 34.1719V31.6406C21.0938 29.3161 19.1995 27.4219 16.875 27.4219H4.21875C1.89422 27.4219 0 29.3161 0 31.6406V42.6094C0 44.4698 1.51453 45.9844 3.375 45.9844V53.1562C3.375 53.6203 3.75469 54 4.21875 54H19.4062C19.8703 54 20.25 53.6203 20.25 53.1562V43.4531H26.5781C28.6706 43.4531 30.375 41.7487 30.375 39.6562C30.375 37.5638 28.6706 35.8594 26.5781 35.8594ZM13.0781 45.9844H6.32812C5.86406 45.9844 5.48438 45.6047 5.48438 45.1406C5.48438 44.6766 5.86406 44.2969 6.32812 44.2969H13.0781C14.2425 44.2969 15.1875 43.3519 15.1875 42.1875C15.1875 41.0231 14.2425 40.0781 13.0781 40.0781H6.75C6.28594 40.0781 5.90625 39.6984 5.90625 39.2344C5.90625 38.7703 6.28594 38.3906 6.75 38.3906H13.0781C15.1706 38.3906 16.875 40.095 16.875 42.1875C16.875 44.28 15.1706 45.9844 13.0781 45.9844Z" fill="#FFFFFF"/>
-<path d="M41.3438 0H23.625C22.2286 0 21.0938 1.13484 21.0938 2.53125V13.5C21.0938 14.8964 22.2286 16.0312 23.625 16.0312V18.2123C23.625 19.3345 24.5405 20.25 25.6627 20.25C26.1984 20.25 26.7258 20.0306 27.1012 19.6509L30.7252 16.0312H41.3438C42.7402 16.0312 43.875 14.8964 43.875 13.5V2.53125C43.875 1.13484 42.7402 0 41.3438 0ZM37.5469 10.9688H27.4219C26.9578 10.9688 26.5781 10.5891 26.5781 10.125C26.5781 9.66094 26.9578 9.28125 27.4219 9.28125H37.5469C38.0109 9.28125 38.3906 9.66094 38.3906 10.125C38.3906 10.5891 38.0109 10.9688 37.5469 10.9688ZM37.5469 6.75H27.4219C26.9578 6.75 26.5781 6.37031 26.5781 5.90625C26.5781 5.44219 26.9578 5.0625 27.4219 5.0625H37.5469C38.0109 5.0625 38.3906 5.44219 38.3906 5.90625C38.3906 6.37031 38.0109 6.75 37.5469 6.75Z" fill="#FFFFFF"/>
-<path d="M32.9058 26.1562V30.7968C32.9058 31.2609 32.5261 31.6406 32.0621 31.6406H27.4214C26.9574 31.6406 26.5777 31.2609 26.5777 30.7968C26.5777 30.3328 26.9574 29.9531 27.4214 29.9531H30.0244L24.9282 24.8526C24.5949 24.5236 24.5949 23.992 24.9282 23.6629C25.2572 23.3296 25.7888 23.3296 26.1178 23.6629L31.2183 28.7592V26.1562C31.2183 25.6921 31.598 25.3125 32.0621 25.3125C32.5261 25.3125 32.9058 25.6921 32.9058 26.1562Z" fill="#FFFFFF"/>
-</svg>
-</div>
-        <h5 class="fs-5">Real time App development along
-side VIJAY & 6+ Projects</h5>
-        <p>In most other courses students have to to do the project on
-their own. At Techswamy, you will be doing most of the
-hands on training during the LIVE classes alongside Vijay
-and your peers and get your doubts resolved instantly.
-</p>
-      </div>
-    </div>
-
-    <div class="ticker_item position-relative wow fadeInUp" data-wow-delay="600ms">
-      <div class="ticker_front">
-        <div class="ticker_icon">
-       <svg width="59" height="47" viewBox="0 0 59 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M58.4711 2.60405C58.4711 2.47703 58.4711 2.35 58.4711 2.22297C58.4711 2.15946 58.4711 2.15946 58.4711 2.09595L58.4711 2.03243C58.4711 1.90541 58.4075 1.77838 58.4075 1.71486C58.4075 1.65135 58.344 1.58784 58.344 1.52432C58.2805 1.3973 58.217 1.27027 58.1535 1.20676C58.1535 1.20676 58.1535 1.14324 58.09 1.14324C58.09 1.14324 58.0265 1.07973 58.0265 1.01622C57.963 0.889189 57.8359 0.825676 57.7724 0.698649C57.7724 0.635135 57.7089 0.635135 57.7089 0.635135C57.5819 0.508108 57.3913 0.381081 57.2008 0.317567C57.1373 0.317567 57.1373 0.317567 57.0738 0.254054C56.9467 0.19054 56.8197 0.127027 56.6927 0.127027C56.6292 0.127027 56.5657 0.0635137 56.5021 0.0635137C56.3751 0.0635137 56.2481 -9.32405e-08 56.1211 -9.30299e-08C55.9305 -9.27141e-08 55.8035 -9.25035e-08 55.613 -9.21877e-08C55.5494 -9.20824e-08 55.4859 -9.19771e-08 55.4859 -9.19771e-08L48.1819 1.46081C47.4832 1.58784 46.9116 1.96892 46.5305 2.54054C46.1494 3.11216 46.0224 3.81081 46.1494 4.44595C46.4035 5.77973 47.7373 6.60541 49.0711 6.41486L44.6251 11.4324L44.6251 5.6527C44.6251 4.57297 43.7994 3.7473 42.7197 3.7473L38.9089 3.7473C38.6548 3.7473 38.4643 3.81081 38.2738 3.87432L38.2738 3.7473C38.2738 2.66757 37.4481 1.84189 36.3684 1.84189L32.5576 1.84189C32.0494 1.84189 31.6048 2.03243 31.2873 2.35C30.9697 2.03243 30.5251 1.84189 30.017 1.84189L26.2062 1.84189C25.317 1.84189 24.6184 2.41351 24.3643 3.23919C24.1738 3.17568 23.9197 3.11216 23.6657 3.11216L19.8548 3.11216C18.7751 3.11216 17.9494 3.93784 17.9494 5.01757L17.9494 8.19324L0.54674 30.1689C0.102146 30.677 -0.0883949 31.3757 0.0386321 32.0743C0.102146 32.773 0.483227 33.3446 1.05485 33.7892C1.49944 34.1068 2.00755 34.2973 2.64269 34.2973C3.46836 34.2973 4.16701 33.9162 4.67512 33.2811L14.0116 21.4676L14.0116 26.8662C14.0116 27.7554 14.3292 28.6446 14.9008 29.3432L16.5521 31.3122C16.9332 31.7568 17.1873 32.3919 17.1873 33.027L17.1873 35.5676C16.1076 35.5676 15.2819 36.3932 15.2819 37.473L15.2819 45.0946C15.2819 46.1743 16.1076 47 17.1873 47L41.3224 47C42.4021 47 43.2278 46.1743 43.2278 45.0946L43.2278 37.473C43.2278 36.3932 42.4021 35.5676 41.3224 35.5676L41.3224 33.6622C41.3224 32.773 41.8305 31.8838 42.5927 31.3757C43.7359 30.677 44.4981 29.4068 44.4981 28.0095L44.4981 19.3081L52.6913 10.0351C52.7548 10.5432 52.9454 11.0514 53.263 11.4959C53.7076 12.0041 54.3427 12.3216 55.0413 12.3851C55.1684 12.3851 55.2954 12.3851 55.3589 12.3851C56.6292 12.3216 57.7089 11.3054 57.7724 10.0351L58.4711 2.66757L58.4711 2.60405ZM38.7819 5.14459L42.5927 5.14459C42.9738 5.14459 43.2278 5.39865 43.2278 5.77973L43.2278 14.0365L43.2278 16.577C43.2278 17.9743 42.0846 19.1176 40.6873 19.1176C39.29 19.1176 38.1467 17.9743 38.1467 16.577L38.1467 14.6716L38.1467 5.77973C38.1467 5.39865 38.4008 5.14459 38.7819 5.14459ZM32.4305 3.23919L36.2413 3.23919C36.6224 3.23919 36.8765 3.49324 36.8765 3.87432L36.8765 5.77973L36.8765 14.6716C36.8765 16.0689 35.7332 17.2122 34.3359 17.2122C32.9386 17.2122 31.7954 16.0689 31.7954 14.6716L31.7954 3.87432C31.7954 3.49324 32.0494 3.23919 32.4305 3.23919ZM25.444 3.87432C25.444 3.49324 25.6981 3.23919 26.0792 3.23919L29.89 3.23919C30.2711 3.23919 30.5251 3.49324 30.5251 3.87432L30.5251 14.6716C30.5251 14.9892 30.4616 15.2432 30.3981 15.4973C29.763 14.9892 28.9373 14.6716 27.9846 14.6716L25.444 14.6716L25.444 5.14459L25.444 3.87432ZM19.7278 4.50946L23.5386 4.50946C23.9197 4.50946 24.1738 4.76351 24.1738 5.14459L24.1738 14.6716L19.0927 14.6716L19.0927 5.14459C19.0927 4.76351 19.3467 4.50946 19.7278 4.50946ZM41.9575 30.2959C40.8143 30.9946 40.0521 32.2649 40.0521 33.6622L40.0521 35.5676L18.4576 35.5676L18.4576 32.9635C18.4576 32.0743 18.14 31.1851 17.5684 30.4865L15.917 28.5176C15.5359 28.073 15.2819 27.4378 15.2819 26.8027L15.2819 18.5459C15.2819 17.0851 16.4886 15.9419 17.8859 15.9419L27.9846 15.9419C29.3819 15.9419 30.5251 17.0851 30.5251 18.4824C30.5251 19.8797 29.3819 21.023 27.9846 21.023L20.363 21.023C20.0454 21.023 19.7278 21.277 19.7278 21.6581C19.7278 21.9757 19.9819 22.2932 20.2994 22.2932C20.617 22.2932 27.9846 22.9919 27.9846 31.1851C27.9846 31.5662 28.2386 31.8203 28.6197 31.8203C29.0008 31.8203 29.2548 31.5662 29.2548 31.1851C29.2548 26.1041 26.7143 23.5635 24.3643 22.2932L27.9846 22.2932C30.0805 22.2932 31.7954 20.5784 31.7954 18.4824C31.7954 18.1013 31.7319 17.7203 31.6048 17.3392C32.3035 18.0378 33.2562 18.4824 34.3359 18.4824C35.3521 18.4824 36.3048 18.1014 37.0035 17.4027C37.3846 19.1176 38.9089 20.3878 40.6873 20.3878C41.64 20.3878 42.5292 20.0068 43.2278 19.4351L43.2278 28.073C43.2278 28.9622 42.7197 29.8514 41.9575 30.2959Z" fill="#F5185A"/>
-</svg>
-</div>
-
-        <div class="ticker_front-content mt-4"><h4 class="fs-5">A Chance to get absorbed into our
-in-house Tech Consultancy
-</h4></div>
-      </div>
-
-      <div class="ticker_back">
-        <div class="text-center icon__back">
-         <svg width="59" height="47" viewBox="0 0 59 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M58.4711 2.60405C58.4711 2.47703 58.4711 2.35 58.4711 2.22297C58.4711 2.15946 58.4711 2.15946 58.4711 2.09595L58.4711 2.03243C58.4711 1.90541 58.4075 1.77838 58.4075 1.71486C58.4075 1.65135 58.344 1.58784 58.344 1.52432C58.2805 1.3973 58.217 1.27027 58.1535 1.20676C58.1535 1.20676 58.1535 1.14324 58.09 1.14324C58.09 1.14324 58.0265 1.07973 58.0265 1.01622C57.963 0.889189 57.8359 0.825676 57.7724 0.698649C57.7724 0.635135 57.7089 0.635135 57.7089 0.635135C57.5819 0.508108 57.3913 0.381081 57.2008 0.317567C57.1373 0.317567 57.1373 0.317567 57.0738 0.254054C56.9467 0.19054 56.8197 0.127027 56.6927 0.127027C56.6292 0.127027 56.5657 0.0635137 56.5021 0.0635137C56.3751 0.0635137 56.2481 -9.32405e-08 56.1211 -9.30299e-08C55.9305 -9.27141e-08 55.8035 -9.25035e-08 55.613 -9.21877e-08C55.5494 -9.20824e-08 55.4859 -9.19771e-08 55.4859 -9.19771e-08L48.1819 1.46081C47.4832 1.58784 46.9116 1.96892 46.5305 2.54054C46.1494 3.11216 46.0224 3.81081 46.1494 4.44595C46.4035 5.77973 47.7373 6.60541 49.0711 6.41486L44.6251 11.4324L44.6251 5.6527C44.6251 4.57297 43.7994 3.7473 42.7197 3.7473L38.9089 3.7473C38.6548 3.7473 38.4643 3.81081 38.2738 3.87432L38.2738 3.7473C38.2738 2.66757 37.4481 1.84189 36.3684 1.84189L32.5576 1.84189C32.0494 1.84189 31.6048 2.03243 31.2873 2.35C30.9697 2.03243 30.5251 1.84189 30.017 1.84189L26.2062 1.84189C25.317 1.84189 24.6184 2.41351 24.3643 3.23919C24.1738 3.17568 23.9197 3.11216 23.6657 3.11216L19.8548 3.11216C18.7751 3.11216 17.9494 3.93784 17.9494 5.01757L17.9494 8.19324L0.54674 30.1689C0.102146 30.677 -0.0883949 31.3757 0.0386321 32.0743C0.102146 32.773 0.483227 33.3446 1.05485 33.7892C1.49944 34.1068 2.00755 34.2973 2.64269 34.2973C3.46836 34.2973 4.16701 33.9162 4.67512 33.2811L14.0116 21.4676L14.0116 26.8662C14.0116 27.7554 14.3292 28.6446 14.9008 29.3432L16.5521 31.3122C16.9332 31.7568 17.1873 32.3919 17.1873 33.027L17.1873 35.5676C16.1076 35.5676 15.2819 36.3932 15.2819 37.473L15.2819 45.0946C15.2819 46.1743 16.1076 47 17.1873 47L41.3224 47C42.4021 47 43.2278 46.1743 43.2278 45.0946L43.2278 37.473C43.2278 36.3932 42.4021 35.5676 41.3224 35.5676L41.3224 33.6622C41.3224 32.773 41.8305 31.8838 42.5927 31.3757C43.7359 30.677 44.4981 29.4068 44.4981 28.0095L44.4981 19.3081L52.6913 10.0351C52.7548 10.5432 52.9454 11.0514 53.263 11.4959C53.7076 12.0041 54.3427 12.3216 55.0413 12.3851C55.1684 12.3851 55.2954 12.3851 55.3589 12.3851C56.6292 12.3216 57.7089 11.3054 57.7724 10.0351L58.4711 2.66757L58.4711 2.60405ZM38.7819 5.14459L42.5927 5.14459C42.9738 5.14459 43.2278 5.39865 43.2278 5.77973L43.2278 14.0365L43.2278 16.577C43.2278 17.9743 42.0846 19.1176 40.6873 19.1176C39.29 19.1176 38.1467 17.9743 38.1467 16.577L38.1467 14.6716L38.1467 5.77973C38.1467 5.39865 38.4008 5.14459 38.7819 5.14459ZM32.4305 3.23919L36.2413 3.23919C36.6224 3.23919 36.8765 3.49324 36.8765 3.87432L36.8765 5.77973L36.8765 14.6716C36.8765 16.0689 35.7332 17.2122 34.3359 17.2122C32.9386 17.2122 31.7954 16.0689 31.7954 14.6716L31.7954 3.87432C31.7954 3.49324 32.0494 3.23919 32.4305 3.23919ZM25.444 3.87432C25.444 3.49324 25.6981 3.23919 26.0792 3.23919L29.89 3.23919C30.2711 3.23919 30.5251 3.49324 30.5251 3.87432L30.5251 14.6716C30.5251 14.9892 30.4616 15.2432 30.3981 15.4973C29.763 14.9892 28.9373 14.6716 27.9846 14.6716L25.444 14.6716L25.444 5.14459L25.444 3.87432ZM19.7278 4.50946L23.5386 4.50946C23.9197 4.50946 24.1738 4.76351 24.1738 5.14459L24.1738 14.6716L19.0927 14.6716L19.0927 5.14459C19.0927 4.76351 19.3467 4.50946 19.7278 4.50946ZM41.9575 30.2959C40.8143 30.9946 40.0521 32.2649 40.0521 33.6622L40.0521 35.5676L18.4576 35.5676L18.4576 32.9635C18.4576 32.0743 18.14 31.1851 17.5684 30.4865L15.917 28.5176C15.5359 28.073 15.2819 27.4378 15.2819 26.8027L15.2819 18.5459C15.2819 17.0851 16.4886 15.9419 17.8859 15.9419L27.9846 15.9419C29.3819 15.9419 30.5251 17.0851 30.5251 18.4824C30.5251 19.8797 29.3819 21.023 27.9846 21.023L20.363 21.023C20.0454 21.023 19.7278 21.277 19.7278 21.6581C19.7278 21.9757 19.9819 22.2932 20.2994 22.2932C20.617 22.2932 27.9846 22.9919 27.9846 31.1851C27.9846 31.5662 28.2386 31.8203 28.6197 31.8203C29.0008 31.8203 29.2548 31.5662 29.2548 31.1851C29.2548 26.1041 26.7143 23.5635 24.3643 22.2932L27.9846 22.2932C30.0805 22.2932 31.7954 20.5784 31.7954 18.4824C31.7954 18.1013 31.7319 17.7203 31.6048 17.3392C32.3035 18.0378 33.2562 18.4824 34.3359 18.4824C35.3521 18.4824 36.3048 18.1014 37.0035 17.4027C37.3846 19.1176 38.9089 20.3878 40.6873 20.3878C41.64 20.3878 42.5292 20.0068 43.2278 19.4351L43.2278 28.073C43.2278 28.9622 42.7197 29.8514 41.9575 30.2959Z" fill="#FFF"/>
-</svg>
-</div>
-        <h5 class="fs-5">A Chance to get absorbed into our
-in-house Tech Consultancy</h5>
-        <p>Show your skills during the bootcamp & you might just land a
-spot in TechSwamy’s In-house Consultancy.
-</p>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-</div>
-</div>
-</section>
-
-<section class="position-relative tailored-section py-5">
-<div class="container">
-<div class="widget-title mb-4">
-<h2 class="fs-1 text-red title-anim">Our Courses Are Tailored For:</h2>
-</div>
-  <div class="px-5">
-<div class="owl-carousel owl-theme mt-5" id="courses-slider">
-      <div class="tailored__item">
       <div class="row align-items-center">
-      <div class="col-lg-4 col-md-4 col-sm-12">
-      <div class="image-box p-3 position-relative">
-      <figure class="image zindex2" data-tilt data-tilt-startX="0" data-tilt-startY="0">
-      <a href="#"><img class="img-fluid shadow" src="images/SoftwareThumb.webp" alt=""/></a></figure></div>
-      </div>
+        <div class="col-lg-5 col-md-6 col-sm-12 order-md-2 text-end" data-tilt>
+          <img class="img-fluid" src="images/bootcamp.svg" alt="" />
+        </div>
 
-      <div class="col-lg-8 col-md-8 col-sm-12">
-        <div class="tailored__content">
-      <h5 class="mb-3 fs-3">Software Engineers</h5>
-      <p>Propel your career forward by upskilling in the latest technologies, ensuring you remain competitive in the fast-paced and ever-evolving software industry.</p>
+        <div class="col-lg-7 col-md-6 col-sm-12 order-md-1">
+          <div class="widget-title mb-4">
+            <span class="d-block title-anim text-uppercase fs-5 fw-bolder text-orange mb-2">Upcoming Bootcamp -
+              27<sup>th</sup> Jan 2024</span>
+            <h2 class="fs-1 text-red title-anim">Fullstack Javascript Bootcamp</h2>
+          </div>
+
+          <h4 class="d-block title-anim fs-4 text-dark mb-3">Launch your Coding Career
+            <span class="d-block text-red mt-1">Beginner to Pro in One Intensive Bootcamp!!</span>
+          </h4>
+          <p class="lh-base mt-3">Designed especially for beginners, our one of a kind <b>offline</b> program offers
+            hyper-personalized guidance, hands-on projects, and a community learning experience. A comprehensive
+            career-ready strategy that includes real-time guidance through an exclusive mentorship program worth 1.5L,
+            ensures your success as a software developer.</p>
+
+          <div class="row">
+            <div class="col-lg-6 col-md-6 mt-3">
+              <p class="fs-6"> <svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="17" cy="17" r="16.5" fill="white" stroke="black" />
+                  <g clip-path="url(#clip0_1_757)">
+                    <path
+                      d="M23 9H24.0049C25.1068 9 26 9.89451 26 10.9941V23.0059C26 24.1072 25.1074 25 24.0049 25H9.99509C8.89323 25 8 24.1055 8 23.0059V10.9941C8 9.89277 8.89262 9 9.99509 9H11V7.49048C11 7.21959 11.2319 7 11.5 7C11.7761 7 12 7.21506 12 7.49048V9H22V7.49048C22 7.21959 22.2319 7 22.5 7C22.7761 7 23 7.21506 23 7.49048V9ZM23 10V10.5095C23 10.7804 22.7681 11 22.5 11C22.2239 11 22 10.7849 22 10.5095V10H12V10.5095C12 10.7804 11.7681 11 11.5 11C11.2239 11 11 10.7849 11 10.5095V10H9.99509C9.44505 10 9 10.4449 9 10.9941V23.0059C9 23.5538 9.44614 24 9.99509 24H24.0049C24.5549 24 25 23.5551 25 23.0059V10.9941C25 10.4462 24.5539 10 24.0049 10H23ZM9 12H25V13H9V12ZM21 15.5047C21 15.226 21.214 15 21.5047 15H22.4953C22.774 15 23 15.214 23 15.5047V16.4953C23 16.774 22.786 17 22.4953 17H21.5047C21.226 17 21 16.786 21 16.4953V15.5047ZM16 15.5047C16 15.226 16.214 15 16.5047 15H17.4953C17.774 15 18 15.214 18 15.5047V16.4953C18 16.774 17.786 17 17.4953 17H16.5047C16.226 17 16 16.786 16 16.4953V15.5047ZM11 15.5047C11 15.226 11.214 15 11.5047 15H12.4953C12.774 15 13 15.214 13 15.5047V16.4953C13 16.774 12.786 17 12.4953 17H11.5047C11.226 17 11 16.786 11 16.4953V15.5047ZM11 20.5047C11 20.226 11.214 20 11.5047 20H12.4953C12.774 20 13 20.214 13 20.5047V21.4953C13 21.774 12.786 22 12.4953 22H11.5047C11.226 22 11 21.786 11 21.4953V20.5047ZM16 20.5047C16 20.226 16.214 20 16.5047 20H17.4953C17.774 20 18 20.214 18 20.5047V21.4953C18 21.774 17.786 22 17.4953 22H16.5047C16.226 22 16 21.786 16 21.4953V20.5047ZM21 20.5047C21 20.226 21.214 20 21.5047 20H22.4953C22.774 20 23 20.214 23 20.5047V21.4953C23 21.774 22.786 22 22.4953 22H21.5047C21.226 22 21 21.786 21 21.4953V20.5047Z"
+                      fill="#F5185A" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1_757">
+                      <rect width="18" height="22.5" fill="white" transform="translate(8 7)" />
+                    </clipPath>
+                  </defs>
+                </svg> 27<sup>th</sup> January 2024</p>
+            </div>
+
+            <div class="col-lg-6 col-md-6 mt-3">
+              <p class="fs-6"> <svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="17" cy="17" r="16.5" fill="white" stroke="black" />
+                  <path
+                    d="M17 7C11.475 7 7 11.475 7 17C7 22.525 11.475 27 17 27C22.525 27 27 22.525 27 17C27 11.475 22.525 7 17 7ZM17 25.625C12.25 25.625 8.375 21.75 8.375 17C8.375 12.25 12.25 8.375 17 8.375C21.75 8.375 25.625 12.25 25.625 17C25.625 21.75 21.75 25.625 17 25.625Z"
+                    fill="#F5185A" />
+                  <path
+                    d="M23.7492 16.3252H17.6742V10.5502C17.6742 10.1752 17.3742 9.87524 16.9992 9.87524C16.6242 9.87524 16.3242 10.1752 16.3242 10.5502V17.0002C16.3242 17.3752 16.6242 17.6752 16.9992 17.6752C17.0492 17.6752 17.0992 17.6502 17.1492 17.6502C17.1992 17.6502 17.2492 17.6752 17.2992 17.6752H23.7492C24.1242 17.6752 24.4242 17.3752 24.4242 17.0002C24.4242 16.6252 24.1242 16.3252 23.7492 16.3252Z"
+                    fill="#F5185A" />
+                </svg>
+                9 am to 5 pm Saturday and Sunday</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6 col-md-6 mt-3">
+              <p class="fs-6"> <svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="17" cy="17" r="16.5" fill="white" stroke="black" />
+                  <path
+                    d="M7 22.6481V24.664C7 24.7531 7.0346 24.8386 7.09618 24.9016C7.15776 24.9646 7.24128 25 7.32837 25H26.6716C26.7587 25 26.8422 24.9646 26.9038 24.9016C26.9654 24.8386 27 24.7531 27 24.664V22.6481C26.9984 21.8862 26.763 21.144 26.327 20.5263C25.891 19.9086 25.2764 19.4466 24.5701 19.2054C25.1383 18.9422 25.6012 18.4878 25.8819 17.9179C26.1626 17.348 26.2441 16.6969 26.1129 16.0731C25.9816 15.4492 25.6455 14.8901 25.1605 14.4888C24.6754 14.0876 24.0707 13.8684 23.447 13.8677C23.377 13.8677 23.3091 13.8677 23.2391 13.8677C22.8049 13.1485 22.1379 12.6079 21.3542 12.3401C21.9223 12.0759 22.3849 11.6205 22.665 11.0498C22.9451 10.4792 23.0258 9.82761 22.8936 9.20351C22.7615 8.57942 22.4245 8.02043 21.9387 7.61953C21.4529 7.21863 20.8476 7 20.2235 7C19.5994 7 18.9941 7.21863 18.5083 7.61953C18.0225 8.02043 17.6855 8.57942 17.5534 9.20351C17.4213 9.82761 17.5019 10.4792 17.782 11.0498C18.0621 11.6205 18.5247 12.0759 19.0928 12.3401C18.3114 12.6128 17.6483 13.1574 17.2189 13.8789C17.1511 13.8789 17.081 13.8789 17 13.8789C16.919 13.8789 16.8643 13.8789 16.7964 13.8789L16.722 13.7669C16.2843 13.1037 15.6448 12.6068 14.9028 12.3536C15.4716 12.0899 15.9349 11.6349 16.2157 11.0642C16.4964 10.4936 16.5777 9.84172 16.4459 9.21723C16.3141 8.59274 15.9772 8.03328 15.4913 7.63202C15.0054 7.23076 14.3998 7.01191 13.7754 7.01191C13.151 7.01191 12.5454 7.23076 12.0595 7.63202C11.5736 8.03328 11.2367 8.59274 11.1049 9.21723C10.9731 9.84172 11.0543 10.4936 11.3351 11.0642C11.6159 11.6349 12.0792 12.0899 12.648 12.3536C11.8637 12.6212 11.1959 13.1618 10.7609 13.8812C10.6931 13.8812 10.623 13.8812 10.553 13.8812C9.92925 13.8818 9.32456 14.101 8.83953 14.5023C8.3545 14.9035 8.01838 15.4626 7.88712 16.0865C7.75585 16.7104 7.83735 17.3615 8.11806 17.9314C8.39876 18.5013 8.86174 18.9556 9.42995 19.2188C8.72567 19.4593 8.11262 19.9192 7.67683 20.5343C7.24103 21.1493 7.00435 21.8885 7 22.6481ZM14.1038 22.6481C14.1245 21.8766 14.4386 21.1438 14.9793 20.6055C15.52 20.0673 16.2446 19.7662 16.9989 19.7662C17.7532 19.7662 18.4778 20.0673 19.0185 20.6055C19.5592 21.1438 19.8733 21.8766 19.894 22.6481V24.3303H14.1038V22.6481ZM26.3411 22.6481V24.3303H20.553V22.6481C20.5737 21.8766 20.8878 21.1438 21.4285 20.6055C21.9692 20.0673 22.6938 19.7662 23.4481 19.7662C24.2025 19.7662 24.927 20.0673 25.4677 20.6055C26.0084 21.1438 26.3225 21.8766 26.3433 22.6481H26.3411ZM25.5223 16.6609C25.5228 17.081 25.4014 17.4917 25.1736 17.8412C24.9459 18.1907 24.6219 18.4632 24.2427 18.6243C23.8636 18.7853 23.4462 18.8277 23.0435 18.746C22.6408 18.6643 22.2708 18.4623 21.9803 18.1654C21.6899 17.8685 21.492 17.4902 21.4118 17.0782C21.3315 16.6662 21.3725 16.2392 21.5295 15.851C21.6865 15.4629 21.9525 15.1311 22.2938 14.8977C22.6351 14.6643 23.0365 14.5397 23.447 14.5397C23.9969 14.5403 24.5241 14.7639 24.9131 15.1615C25.3021 15.5591 25.5212 16.0983 25.5223 16.6609ZM18.1493 9.80906C18.1493 9.38908 18.271 8.97854 18.4991 8.62935C18.7271 8.28015 19.0512 8.00799 19.4304 7.84727C19.8096 7.68656 20.2269 7.64451 20.6295 7.72644C21.032 7.80837 21.4018 8.01061 21.6921 8.30757C21.9823 8.60454 22.18 8.9829 22.26 9.3948C22.3401 9.8067 22.299 10.2336 22.1419 10.6217C21.9849 11.0097 21.7189 11.3413 21.3776 11.5746C21.0363 11.8079 20.6351 11.9325 20.2246 11.9325C19.6744 11.9319 19.1469 11.708 18.7578 11.3099C18.3687 10.9118 18.1499 10.372 18.1493 9.80906ZM20.2246 12.8352C20.6752 12.8342 21.1196 12.9417 21.522 13.1491C21.9243 13.3565 22.2733 13.658 22.5407 14.029C22.0259 14.2129 21.5768 14.5507 21.2515 14.9985C20.9262 15.4464 20.7397 15.9838 20.7162 16.5413C20.6926 17.0987 20.833 17.6506 21.1192 18.1256C21.4055 18.6005 21.8244 18.9767 22.3218 19.2054C21.862 19.3637 21.4386 19.6164 21.0777 19.9481C20.7167 20.2797 20.4256 20.6832 20.2224 21.1339C20.019 20.6836 19.7278 20.2805 19.3668 19.9493C19.0059 19.6181 18.5826 19.3657 18.123 19.2076C18.6204 18.9789 19.0394 18.6027 19.3256 18.1278C19.6118 17.6529 19.7522 17.101 19.7287 16.5435C19.7051 15.986 19.5186 15.4486 19.1934 15.0008C18.8681 14.5529 18.419 14.2152 17.9041 14.0313C18.1717 13.6592 18.5213 13.357 18.9245 13.1491C19.3277 12.9413 19.7731 12.8337 20.2246 12.8352ZM19.0753 16.6609C19.0757 17.081 18.9544 17.4917 18.7266 17.8412C18.4988 18.1907 18.1749 18.4632 17.7957 18.6243C17.4165 18.7853 16.9992 18.8277 16.5965 18.746C16.1938 18.6643 15.8238 18.4623 15.5333 18.1654C15.2429 17.8685 15.045 17.4902 14.9647 17.0782C14.8845 16.6662 14.9254 16.2392 15.0825 15.851C15.2395 15.4629 15.5055 15.1311 15.8468 14.8977C16.1881 14.6643 16.5894 14.5397 17 14.5397C17.5498 14.5403 18.077 14.7639 18.4661 15.1615C18.8551 15.5591 19.0741 16.0983 19.0753 16.6609ZM11.7023 9.80906C11.7023 9.38908 11.824 8.97854 12.052 8.62935C12.2801 8.28015 12.6042 8.00799 12.9834 7.84727C13.3626 7.68656 13.7799 7.64451 14.1825 7.72644C14.585 7.80837 14.9548 8.01061 15.245 8.30757C15.5353 8.60454 15.7329 8.9829 15.813 9.3948C15.8931 9.8067 15.852 10.2336 15.6949 10.6217C15.5378 11.0097 15.2718 11.3413 14.9306 11.5746C14.5893 11.8079 14.188 11.9325 13.7776 11.9325C13.2274 11.9319 12.6998 11.708 12.3108 11.3099C11.9217 10.9118 11.7029 10.372 11.7023 9.80906ZM13.7776 12.8352C14.2279 12.8358 14.6718 12.944 15.0739 13.1513C15.476 13.3586 15.8252 13.6591 16.0937 14.029C15.5797 14.2138 15.1315 14.5519 14.807 14.9997C14.4824 15.4475 14.2964 15.9845 14.2728 16.5414C14.2493 17.0984 14.3893 17.6498 14.6748 18.1246C14.9603 18.5994 15.3783 18.9758 15.8748 19.2054C15.415 19.3637 14.9916 19.6164 14.6306 19.9481C14.2696 20.2797 13.9786 20.6832 13.7754 21.1339C13.5719 20.6836 13.2808 20.2805 12.9198 19.9493C12.5588 19.6181 12.1356 19.3657 11.676 19.2076C12.1725 18.9781 12.5905 18.6017 12.876 18.1268C13.1615 17.652 13.3015 17.1006 13.2779 16.5437C13.2544 15.9867 13.0684 15.4497 12.7438 15.0019C12.4193 14.5542 11.9711 14.2161 11.4571 14.0313C11.7249 13.6594 12.0746 13.3574 12.4777 13.1496C12.8809 12.9418 13.3262 12.8341 13.7776 12.8352ZM8.47767 16.6609C8.47767 16.2409 8.59939 15.8304 8.82742 15.4812C9.05546 15.132 9.37958 14.8598 9.75879 14.6991C10.138 14.5384 10.5553 14.4963 10.9578 14.5783C11.3604 14.6602 11.7302 14.8624 12.0204 15.1594C12.3107 15.4564 12.5083 15.8347 12.5884 16.2466C12.6685 16.6585 12.6274 17.0855 12.4703 17.4735C12.3132 17.8615 12.0472 18.1931 11.706 18.4264C11.3647 18.6598 10.9634 18.7843 10.553 18.7843C10.0027 18.7837 9.47522 18.5598 9.08615 18.1617C8.69708 17.7636 8.47825 17.2239 8.47767 16.6609ZM10.553 19.687C11.3202 19.6882 12.0556 20.0005 12.5981 20.5556C13.1406 21.1106 13.4459 21.8631 13.447 22.6481V24.3303H7.65674V22.6481C7.6579 21.8627 7.96348 21.1099 8.50644 20.5548C9.0494 19.9997 9.7854 19.6876 10.553 19.687Z"
+                    fill="#F5185A" stroke="#F5185A" stroke-width="0.2" />
+                </svg>
+                20 weeks (approx 5 months)</p>
+            </div>
+
+            <div class="col-lg-6 col-md-6 mt-3">
+              <p class="fs-6"> <svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="17" cy="17" r="16.5" fill="white" stroke="black" />
+                  <path
+                    d="M17 18C19.2057 18 21 16.2057 21 14C21 11.7943 19.2057 10 17 10C14.7943 10 13 11.7943 13 14C13 16.2057 14.7943 18 17 18ZM17 10.675C18.8334 10.675 20.325 12.1666 20.325 14C20.325 15.8334 18.8334 17.325 17 17.325C15.1666 17.325 13.675 15.8334 13.675 14C13.675 12.1666 15.1666 10.675 17 10.675Z"
+                    fill="#F5185A" stroke="#F5185A" stroke-width="0.4" />
+                  <path
+                    d="M16.7387 27.8966C16.8115 27.9655 16.9058 28 17 28C17.0942 28 17.1885 27.9655 17.2613 27.8966C20.1238 25.1836 23.6883 19.9556 24.6997 15.9027C24.8284 15.3799 25 14.5944 25 13.8138C25 9.50539 21.4111 6 17 6C12.5889 6 9 9.50503 9 13.8134C9 14.5941 9.17156 15.3795 9.30033 15.9035C10.3117 19.9559 13.8762 25.1836 16.7383 27.8966H16.7387ZM17 6.73298C20.997 6.73298 24.2492 9.90947 24.2492 13.8134C24.2492 14.5163 24.0896 15.2442 23.9699 15.73C23.0216 19.5317 19.7375 24.4154 17 27.1174C14.2625 24.4158 10.9784 19.5321 10.0301 15.7311C9.91037 15.2446 9.75082 14.5163 9.75082 13.8138C9.75082 9.90983 13.003 6.73298 17 6.73298Z"
+                    fill="#F5185A" stroke="#F5185A" stroke-width="0.4" />
+                </svg>
+                Tech Swamy Bangalore</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-      </div>
-      </div>
-      </div>
+  </section>
 
-      <div class="tailored__item">
-      <div class="row align-items-center">
-      <div class="col-lg-4 col-md-4 col-sm-12">
-      <div class="image-box p-3 position-relative">
-      <figure class="image zindex2" data-tilt data-tilt-startX="0" data-tilt-startY="0">
-      <a href="#"><img class="img-fluid shadow" src="images/GraduatesThumb.webp" alt=""/></a></figure></div>
-      </div>
+  <section class="position-relative campus-section light-col py-4">
+    <div class="container">
+      <div class="position-relative zIndex2">
+        <div class="widget-title mb-4">
+          <h2 class="fs-1 text-red title-anim">What We Offer?</h2>
+        </div>
 
-      <div class="col-lg-8 col-md-8 col-sm-12">
-        <div class="tailored__content">
-      <h5 class="mb-3 fs-3">Recent Graduates</h5>
-      <p>Bridge the gap between academia and industry with practical training and hands-on projects to kickstart your career journey.</p>
+        <div class="position-relative px-4">
+          <div class="owl-carousel owl-theme" id="ticker-slider">
+            <div class="ticker_item position-relative wow fadeInUp">
+              <div class="ticker_front">
+                <div class="ticker_icon">
+                  <svg width="48" height="39" viewBox="0 0 48 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M6.30003 19.7001H41.8C42.7 19.7001 43.5 19.1001 43.7 18.2001L47 6.40012C46.5 5.90012 45.8 5.60012 45 5.60012H33.8L32.7 1.10012C32.5 0.500122 32 0.00012207 31.3 0.00012207H16.7C16 0.00012207 15.5 0.400122 15.3 1.10012L14.2 5.60012H3.00003C2.20003 5.60012 1.50003 5.90012 1.00003 6.40012L4.40003 18.3001C4.60003 19.1001 5.40003 19.7001 6.30003 19.7001ZM17.8 2.80012H30.2L30.9 5.50012H17.1L17.8 2.80012Z"
+                      fill="#F5185A" />
+                    <path
+                      d="M22.2 28.9001H25.9C26.5 28.9001 26.9 28.5001 26.9 27.9001V21.7001H21.2V27.9001C21.2 28.5001 21.6 28.9001 22.2 28.9001Z"
+                      fill="#F5185A" />
+                    <path
+                      d="M45.6 18.8002C45.1 20.5002 43.5 21.7002 41.8 21.7002H28.8V27.9002C28.8 29.6002 27.5 30.9002 25.8 30.9002H22.1C20.4 30.9002 19.1 29.6002 19.1 27.9002V21.7002H6.30003C4.50003 21.7002 2.90003 20.5002 2.50003 18.8002L3.05176e-05 10.3002V35.7002C3.05176e-05 37.4002 1.30003 38.7002 3.00003 38.7002H45C46.7 38.7002 48 37.4002 48 35.7002V10.3002L45.6 18.8002Z"
+                      fill="#F5185A" />
+                  </svg>
+                </div>
+                <div class="ticker_front-content mt-4">
+                  <h4 class="fs-5">Hyper-Personalized<br /> Mentoring</h4>
+                </div>
+              </div>
+
+              <div class="ticker_back">
+                <div class="text-center icon__back">
+                  <svg width="48" height="39" viewBox="0 0 48 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M6.30003 19.7001H41.8C42.7 19.7001 43.5 19.1001 43.7 18.2001L47 6.40012C46.5 5.90012 45.8 5.60012 45 5.60012H33.8L32.7 1.10012C32.5 0.500122 32 0.00012207 31.3 0.00012207H16.7C16 0.00012207 15.5 0.400122 15.3 1.10012L14.2 5.60012H3.00003C2.20003 5.60012 1.50003 5.90012 1.00003 6.40012L4.40003 18.3001C4.60003 19.1001 5.40003 19.7001 6.30003 19.7001ZM17.8 2.80012H30.2L30.9 5.50012H17.1L17.8 2.80012Z"
+                      fill="#FFFFFF" />
+                    <path
+                      d="M22.2 28.9001H25.9C26.5 28.9001 26.9 28.5001 26.9 27.9001V21.7001H21.2V27.9001C21.2 28.5001 21.6 28.9001 22.2 28.9001Z"
+                      fill="#FFFFFF" />
+                    <path
+                      d="M45.6 18.8002C45.1 20.5002 43.5 21.7002 41.8 21.7002H28.8V27.9002C28.8 29.6002 27.5 30.9002 25.8 30.9002H22.1C20.4 30.9002 19.1 29.6002 19.1 27.9002V21.7002H6.30003C4.50003 21.7002 2.90003 20.5002 2.50003 18.8002L3.05176e-05 10.3002V35.7002C3.05176e-05 37.4002 1.30003 38.7002 3.00003 38.7002H45C46.7 38.7002 48 37.4002 48 35.7002V10.3002L45.6 18.8002Z"
+                      fill="#FFFFFF" />
+                  </svg>
+                </div>
+                <h5 class="fs-5">Hyper-Personalized<br /> Mentoring</h5>
+                <p>The advantage of having one consistent trainer throughout your
+                  journey is getting a super personalised learning experience via:
+                  1. Consistency in teaching methods. 2. Trainer being aware of
+                  your grasping abilities and growth potential.
+                  3. Tailored career guidance as per your needs.
+                </p>
+              </div>
+            </div>
+
+            <div class="ticker_item position-relative wow fadeInUp" data-wow-delay="300ms">
+              <div class="ticker_front">
+                <div class="ticker_icon">
+                  <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M54 50.625V53.1562C54 53.6203 53.6203 54 53.1562 54H32.0625C31.5984 54 31.2188 53.6203 31.2188 53.1562V50.625C31.2188 46.9041 34.2478 43.875 37.9688 43.875H47.25C50.9709 43.875 54 46.9041 54 50.625Z"
+                      fill="#F5185A" />
+                    <path
+                      d="M42.6094 42.1875C46.5703 42.1875 49.7812 38.9765 49.7812 35.0156C49.7812 31.0547 46.5703 27.8438 42.6094 27.8438C38.6485 27.8438 35.4375 31.0547 35.4375 35.0156C35.4375 38.9765 38.6485 42.1875 42.6094 42.1875Z"
+                      fill="#F5185A" />
+                    <path
+                      d="M11.8125 26.1562C15.7734 26.1562 18.9844 22.9453 18.9844 18.9844C18.9844 15.0235 15.7734 11.8125 11.8125 11.8125C7.85158 11.8125 4.64062 15.0235 4.64062 18.9844C4.64062 22.9453 7.85158 26.1562 11.8125 26.1562Z"
+                      fill="#F5185A" />
+                    <path
+                      d="M26.5781 35.8594H22.7812C21.8489 35.8594 21.0938 35.1042 21.0938 34.1719V31.6406C21.0938 29.3161 19.1995 27.4219 16.875 27.4219H4.21875C1.89422 27.4219 0 29.3161 0 31.6406V42.6094C0 44.4698 1.51453 45.9844 3.375 45.9844V53.1562C3.375 53.6203 3.75469 54 4.21875 54H19.4062C19.8703 54 20.25 53.6203 20.25 53.1562V43.4531H26.5781C28.6706 43.4531 30.375 41.7487 30.375 39.6562C30.375 37.5638 28.6706 35.8594 26.5781 35.8594ZM13.0781 45.9844H6.32812C5.86406 45.9844 5.48438 45.6047 5.48438 45.1406C5.48438 44.6766 5.86406 44.2969 6.32812 44.2969H13.0781C14.2425 44.2969 15.1875 43.3519 15.1875 42.1875C15.1875 41.0231 14.2425 40.0781 13.0781 40.0781H6.75C6.28594 40.0781 5.90625 39.6984 5.90625 39.2344C5.90625 38.7703 6.28594 38.3906 6.75 38.3906H13.0781C15.1706 38.3906 16.875 40.095 16.875 42.1875C16.875 44.28 15.1706 45.9844 13.0781 45.9844Z"
+                      fill="#F5185A" />
+                    <path
+                      d="M41.3438 0H23.625C22.2286 0 21.0938 1.13484 21.0938 2.53125V13.5C21.0938 14.8964 22.2286 16.0312 23.625 16.0312V18.2123C23.625 19.3345 24.5405 20.25 25.6627 20.25C26.1984 20.25 26.7258 20.0306 27.1012 19.6509L30.7252 16.0312H41.3438C42.7402 16.0312 43.875 14.8964 43.875 13.5V2.53125C43.875 1.13484 42.7402 0 41.3438 0ZM37.5469 10.9688H27.4219C26.9578 10.9688 26.5781 10.5891 26.5781 10.125C26.5781 9.66094 26.9578 9.28125 27.4219 9.28125H37.5469C38.0109 9.28125 38.3906 9.66094 38.3906 10.125C38.3906 10.5891 38.0109 10.9688 37.5469 10.9688ZM37.5469 6.75H27.4219C26.9578 6.75 26.5781 6.37031 26.5781 5.90625C26.5781 5.44219 26.9578 5.0625 27.4219 5.0625H37.5469C38.0109 5.0625 38.3906 5.44219 38.3906 5.90625C38.3906 6.37031 38.0109 6.75 37.5469 6.75Z"
+                      fill="#F5185A" />
+                    <path
+                      d="M32.9058 26.1562V30.7968C32.9058 31.2609 32.5261 31.6406 32.0621 31.6406H27.4214C26.9574 31.6406 26.5777 31.2609 26.5777 30.7968C26.5777 30.3328 26.9574 29.9531 27.4214 29.9531H30.0244L24.9282 24.8526C24.5949 24.5236 24.5949 23.992 24.9282 23.6629C25.2572 23.3296 25.7888 23.3296 26.1178 23.6629L31.2183 28.7592V26.1562C31.2183 25.6921 31.598 25.3125 32.0621 25.3125C32.5261 25.3125 32.9058 25.6921 32.9058 26.1562Z"
+                      fill="#F5185A" />
+                  </svg>
+                </div>
+
+                <div class="ticker_front-content mt-4">
+                  <h4 class="fs-5">Real time App development along
+                    side VIJAY & 6+ Projects</h4>
+                </div>
+              </div>
+
+              <div class="ticker_back">
+                <div class="text-center icon__back">
+                  <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M54 50.625V53.1562C54 53.6203 53.6203 54 53.1562 54H32.0625C31.5984 54 31.2188 53.6203 31.2188 53.1562V50.625C31.2188 46.9041 34.2478 43.875 37.9688 43.875H47.25C50.9709 43.875 54 46.9041 54 50.625Z"
+                      fill="#FFFFFF" />
+                    <path
+                      d="M42.6094 42.1875C46.5703 42.1875 49.7812 38.9765 49.7812 35.0156C49.7812 31.0547 46.5703 27.8438 42.6094 27.8438C38.6485 27.8438 35.4375 31.0547 35.4375 35.0156C35.4375 38.9765 38.6485 42.1875 42.6094 42.1875Z"
+                      fill="#FFFFFF" />
+                    <path
+                      d="M11.8125 26.1562C15.7734 26.1562 18.9844 22.9453 18.9844 18.9844C18.9844 15.0235 15.7734 11.8125 11.8125 11.8125C7.85158 11.8125 4.64062 15.0235 4.64062 18.9844C4.64062 22.9453 7.85158 26.1562 11.8125 26.1562Z"
+                      fill="#FFFFFF" />
+                    <path
+                      d="M26.5781 35.8594H22.7812C21.8489 35.8594 21.0938 35.1042 21.0938 34.1719V31.6406C21.0938 29.3161 19.1995 27.4219 16.875 27.4219H4.21875C1.89422 27.4219 0 29.3161 0 31.6406V42.6094C0 44.4698 1.51453 45.9844 3.375 45.9844V53.1562C3.375 53.6203 3.75469 54 4.21875 54H19.4062C19.8703 54 20.25 53.6203 20.25 53.1562V43.4531H26.5781C28.6706 43.4531 30.375 41.7487 30.375 39.6562C30.375 37.5638 28.6706 35.8594 26.5781 35.8594ZM13.0781 45.9844H6.32812C5.86406 45.9844 5.48438 45.6047 5.48438 45.1406C5.48438 44.6766 5.86406 44.2969 6.32812 44.2969H13.0781C14.2425 44.2969 15.1875 43.3519 15.1875 42.1875C15.1875 41.0231 14.2425 40.0781 13.0781 40.0781H6.75C6.28594 40.0781 5.90625 39.6984 5.90625 39.2344C5.90625 38.7703 6.28594 38.3906 6.75 38.3906H13.0781C15.1706 38.3906 16.875 40.095 16.875 42.1875C16.875 44.28 15.1706 45.9844 13.0781 45.9844Z"
+                      fill="#FFFFFF" />
+                    <path
+                      d="M41.3438 0H23.625C22.2286 0 21.0938 1.13484 21.0938 2.53125V13.5C21.0938 14.8964 22.2286 16.0312 23.625 16.0312V18.2123C23.625 19.3345 24.5405 20.25 25.6627 20.25C26.1984 20.25 26.7258 20.0306 27.1012 19.6509L30.7252 16.0312H41.3438C42.7402 16.0312 43.875 14.8964 43.875 13.5V2.53125C43.875 1.13484 42.7402 0 41.3438 0ZM37.5469 10.9688H27.4219C26.9578 10.9688 26.5781 10.5891 26.5781 10.125C26.5781 9.66094 26.9578 9.28125 27.4219 9.28125H37.5469C38.0109 9.28125 38.3906 9.66094 38.3906 10.125C38.3906 10.5891 38.0109 10.9688 37.5469 10.9688ZM37.5469 6.75H27.4219C26.9578 6.75 26.5781 6.37031 26.5781 5.90625C26.5781 5.44219 26.9578 5.0625 27.4219 5.0625H37.5469C38.0109 5.0625 38.3906 5.44219 38.3906 5.90625C38.3906 6.37031 38.0109 6.75 37.5469 6.75Z"
+                      fill="#FFFFFF" />
+                    <path
+                      d="M32.9058 26.1562V30.7968C32.9058 31.2609 32.5261 31.6406 32.0621 31.6406H27.4214C26.9574 31.6406 26.5777 31.2609 26.5777 30.7968C26.5777 30.3328 26.9574 29.9531 27.4214 29.9531H30.0244L24.9282 24.8526C24.5949 24.5236 24.5949 23.992 24.9282 23.6629C25.2572 23.3296 25.7888 23.3296 26.1178 23.6629L31.2183 28.7592V26.1562C31.2183 25.6921 31.598 25.3125 32.0621 25.3125C32.5261 25.3125 32.9058 25.6921 32.9058 26.1562Z"
+                      fill="#FFFFFF" />
+                  </svg>
+                </div>
+                <h5 class="fs-5">Real time App development along
+                  side VIJAY & 6+ Projects</h5>
+                <p>In most other courses students have to to do the project on
+                  their own. At Techswamy, you will be doing most of the
+                  hands on training during the LIVE classes alongside Vijay
+                  and your peers and get your doubts resolved instantly.
+                </p>
+              </div>
+            </div>
+
+            <div class="ticker_item position-relative wow fadeInUp" data-wow-delay="600ms">
+              <div class="ticker_front">
+                <div class="ticker_icon">
+                  <svg width="59" height="47" viewBox="0 0 59 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M58.4711 2.60405C58.4711 2.47703 58.4711 2.35 58.4711 2.22297C58.4711 2.15946 58.4711 2.15946 58.4711 2.09595L58.4711 2.03243C58.4711 1.90541 58.4075 1.77838 58.4075 1.71486C58.4075 1.65135 58.344 1.58784 58.344 1.52432C58.2805 1.3973 58.217 1.27027 58.1535 1.20676C58.1535 1.20676 58.1535 1.14324 58.09 1.14324C58.09 1.14324 58.0265 1.07973 58.0265 1.01622C57.963 0.889189 57.8359 0.825676 57.7724 0.698649C57.7724 0.635135 57.7089 0.635135 57.7089 0.635135C57.5819 0.508108 57.3913 0.381081 57.2008 0.317567C57.1373 0.317567 57.1373 0.317567 57.0738 0.254054C56.9467 0.19054 56.8197 0.127027 56.6927 0.127027C56.6292 0.127027 56.5657 0.0635137 56.5021 0.0635137C56.3751 0.0635137 56.2481 -9.32405e-08 56.1211 -9.30299e-08C55.9305 -9.27141e-08 55.8035 -9.25035e-08 55.613 -9.21877e-08C55.5494 -9.20824e-08 55.4859 -9.19771e-08 55.4859 -9.19771e-08L48.1819 1.46081C47.4832 1.58784 46.9116 1.96892 46.5305 2.54054C46.1494 3.11216 46.0224 3.81081 46.1494 4.44595C46.4035 5.77973 47.7373 6.60541 49.0711 6.41486L44.6251 11.4324L44.6251 5.6527C44.6251 4.57297 43.7994 3.7473 42.7197 3.7473L38.9089 3.7473C38.6548 3.7473 38.4643 3.81081 38.2738 3.87432L38.2738 3.7473C38.2738 2.66757 37.4481 1.84189 36.3684 1.84189L32.5576 1.84189C32.0494 1.84189 31.6048 2.03243 31.2873 2.35C30.9697 2.03243 30.5251 1.84189 30.017 1.84189L26.2062 1.84189C25.317 1.84189 24.6184 2.41351 24.3643 3.23919C24.1738 3.17568 23.9197 3.11216 23.6657 3.11216L19.8548 3.11216C18.7751 3.11216 17.9494 3.93784 17.9494 5.01757L17.9494 8.19324L0.54674 30.1689C0.102146 30.677 -0.0883949 31.3757 0.0386321 32.0743C0.102146 32.773 0.483227 33.3446 1.05485 33.7892C1.49944 34.1068 2.00755 34.2973 2.64269 34.2973C3.46836 34.2973 4.16701 33.9162 4.67512 33.2811L14.0116 21.4676L14.0116 26.8662C14.0116 27.7554 14.3292 28.6446 14.9008 29.3432L16.5521 31.3122C16.9332 31.7568 17.1873 32.3919 17.1873 33.027L17.1873 35.5676C16.1076 35.5676 15.2819 36.3932 15.2819 37.473L15.2819 45.0946C15.2819 46.1743 16.1076 47 17.1873 47L41.3224 47C42.4021 47 43.2278 46.1743 43.2278 45.0946L43.2278 37.473C43.2278 36.3932 42.4021 35.5676 41.3224 35.5676L41.3224 33.6622C41.3224 32.773 41.8305 31.8838 42.5927 31.3757C43.7359 30.677 44.4981 29.4068 44.4981 28.0095L44.4981 19.3081L52.6913 10.0351C52.7548 10.5432 52.9454 11.0514 53.263 11.4959C53.7076 12.0041 54.3427 12.3216 55.0413 12.3851C55.1684 12.3851 55.2954 12.3851 55.3589 12.3851C56.6292 12.3216 57.7089 11.3054 57.7724 10.0351L58.4711 2.66757L58.4711 2.60405ZM38.7819 5.14459L42.5927 5.14459C42.9738 5.14459 43.2278 5.39865 43.2278 5.77973L43.2278 14.0365L43.2278 16.577C43.2278 17.9743 42.0846 19.1176 40.6873 19.1176C39.29 19.1176 38.1467 17.9743 38.1467 16.577L38.1467 14.6716L38.1467 5.77973C38.1467 5.39865 38.4008 5.14459 38.7819 5.14459ZM32.4305 3.23919L36.2413 3.23919C36.6224 3.23919 36.8765 3.49324 36.8765 3.87432L36.8765 5.77973L36.8765 14.6716C36.8765 16.0689 35.7332 17.2122 34.3359 17.2122C32.9386 17.2122 31.7954 16.0689 31.7954 14.6716L31.7954 3.87432C31.7954 3.49324 32.0494 3.23919 32.4305 3.23919ZM25.444 3.87432C25.444 3.49324 25.6981 3.23919 26.0792 3.23919L29.89 3.23919C30.2711 3.23919 30.5251 3.49324 30.5251 3.87432L30.5251 14.6716C30.5251 14.9892 30.4616 15.2432 30.3981 15.4973C29.763 14.9892 28.9373 14.6716 27.9846 14.6716L25.444 14.6716L25.444 5.14459L25.444 3.87432ZM19.7278 4.50946L23.5386 4.50946C23.9197 4.50946 24.1738 4.76351 24.1738 5.14459L24.1738 14.6716L19.0927 14.6716L19.0927 5.14459C19.0927 4.76351 19.3467 4.50946 19.7278 4.50946ZM41.9575 30.2959C40.8143 30.9946 40.0521 32.2649 40.0521 33.6622L40.0521 35.5676L18.4576 35.5676L18.4576 32.9635C18.4576 32.0743 18.14 31.1851 17.5684 30.4865L15.917 28.5176C15.5359 28.073 15.2819 27.4378 15.2819 26.8027L15.2819 18.5459C15.2819 17.0851 16.4886 15.9419 17.8859 15.9419L27.9846 15.9419C29.3819 15.9419 30.5251 17.0851 30.5251 18.4824C30.5251 19.8797 29.3819 21.023 27.9846 21.023L20.363 21.023C20.0454 21.023 19.7278 21.277 19.7278 21.6581C19.7278 21.9757 19.9819 22.2932 20.2994 22.2932C20.617 22.2932 27.9846 22.9919 27.9846 31.1851C27.9846 31.5662 28.2386 31.8203 28.6197 31.8203C29.0008 31.8203 29.2548 31.5662 29.2548 31.1851C29.2548 26.1041 26.7143 23.5635 24.3643 22.2932L27.9846 22.2932C30.0805 22.2932 31.7954 20.5784 31.7954 18.4824C31.7954 18.1013 31.7319 17.7203 31.6048 17.3392C32.3035 18.0378 33.2562 18.4824 34.3359 18.4824C35.3521 18.4824 36.3048 18.1014 37.0035 17.4027C37.3846 19.1176 38.9089 20.3878 40.6873 20.3878C41.64 20.3878 42.5292 20.0068 43.2278 19.4351L43.2278 28.073C43.2278 28.9622 42.7197 29.8514 41.9575 30.2959Z"
+                      fill="#F5185A" />
+                  </svg>
+                </div>
+
+                <div class="ticker_front-content mt-4">
+                  <h4 class="fs-5">A Chance to get absorbed into our
+                    in-house Tech Consultancy
+                  </h4>
+                </div>
+              </div>
+
+              <div class="ticker_back">
+                <div class="text-center icon__back">
+                  <svg width="59" height="47" viewBox="0 0 59 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M58.4711 2.60405C58.4711 2.47703 58.4711 2.35 58.4711 2.22297C58.4711 2.15946 58.4711 2.15946 58.4711 2.09595L58.4711 2.03243C58.4711 1.90541 58.4075 1.77838 58.4075 1.71486C58.4075 1.65135 58.344 1.58784 58.344 1.52432C58.2805 1.3973 58.217 1.27027 58.1535 1.20676C58.1535 1.20676 58.1535 1.14324 58.09 1.14324C58.09 1.14324 58.0265 1.07973 58.0265 1.01622C57.963 0.889189 57.8359 0.825676 57.7724 0.698649C57.7724 0.635135 57.7089 0.635135 57.7089 0.635135C57.5819 0.508108 57.3913 0.381081 57.2008 0.317567C57.1373 0.317567 57.1373 0.317567 57.0738 0.254054C56.9467 0.19054 56.8197 0.127027 56.6927 0.127027C56.6292 0.127027 56.5657 0.0635137 56.5021 0.0635137C56.3751 0.0635137 56.2481 -9.32405e-08 56.1211 -9.30299e-08C55.9305 -9.27141e-08 55.8035 -9.25035e-08 55.613 -9.21877e-08C55.5494 -9.20824e-08 55.4859 -9.19771e-08 55.4859 -9.19771e-08L48.1819 1.46081C47.4832 1.58784 46.9116 1.96892 46.5305 2.54054C46.1494 3.11216 46.0224 3.81081 46.1494 4.44595C46.4035 5.77973 47.7373 6.60541 49.0711 6.41486L44.6251 11.4324L44.6251 5.6527C44.6251 4.57297 43.7994 3.7473 42.7197 3.7473L38.9089 3.7473C38.6548 3.7473 38.4643 3.81081 38.2738 3.87432L38.2738 3.7473C38.2738 2.66757 37.4481 1.84189 36.3684 1.84189L32.5576 1.84189C32.0494 1.84189 31.6048 2.03243 31.2873 2.35C30.9697 2.03243 30.5251 1.84189 30.017 1.84189L26.2062 1.84189C25.317 1.84189 24.6184 2.41351 24.3643 3.23919C24.1738 3.17568 23.9197 3.11216 23.6657 3.11216L19.8548 3.11216C18.7751 3.11216 17.9494 3.93784 17.9494 5.01757L17.9494 8.19324L0.54674 30.1689C0.102146 30.677 -0.0883949 31.3757 0.0386321 32.0743C0.102146 32.773 0.483227 33.3446 1.05485 33.7892C1.49944 34.1068 2.00755 34.2973 2.64269 34.2973C3.46836 34.2973 4.16701 33.9162 4.67512 33.2811L14.0116 21.4676L14.0116 26.8662C14.0116 27.7554 14.3292 28.6446 14.9008 29.3432L16.5521 31.3122C16.9332 31.7568 17.1873 32.3919 17.1873 33.027L17.1873 35.5676C16.1076 35.5676 15.2819 36.3932 15.2819 37.473L15.2819 45.0946C15.2819 46.1743 16.1076 47 17.1873 47L41.3224 47C42.4021 47 43.2278 46.1743 43.2278 45.0946L43.2278 37.473C43.2278 36.3932 42.4021 35.5676 41.3224 35.5676L41.3224 33.6622C41.3224 32.773 41.8305 31.8838 42.5927 31.3757C43.7359 30.677 44.4981 29.4068 44.4981 28.0095L44.4981 19.3081L52.6913 10.0351C52.7548 10.5432 52.9454 11.0514 53.263 11.4959C53.7076 12.0041 54.3427 12.3216 55.0413 12.3851C55.1684 12.3851 55.2954 12.3851 55.3589 12.3851C56.6292 12.3216 57.7089 11.3054 57.7724 10.0351L58.4711 2.66757L58.4711 2.60405ZM38.7819 5.14459L42.5927 5.14459C42.9738 5.14459 43.2278 5.39865 43.2278 5.77973L43.2278 14.0365L43.2278 16.577C43.2278 17.9743 42.0846 19.1176 40.6873 19.1176C39.29 19.1176 38.1467 17.9743 38.1467 16.577L38.1467 14.6716L38.1467 5.77973C38.1467 5.39865 38.4008 5.14459 38.7819 5.14459ZM32.4305 3.23919L36.2413 3.23919C36.6224 3.23919 36.8765 3.49324 36.8765 3.87432L36.8765 5.77973L36.8765 14.6716C36.8765 16.0689 35.7332 17.2122 34.3359 17.2122C32.9386 17.2122 31.7954 16.0689 31.7954 14.6716L31.7954 3.87432C31.7954 3.49324 32.0494 3.23919 32.4305 3.23919ZM25.444 3.87432C25.444 3.49324 25.6981 3.23919 26.0792 3.23919L29.89 3.23919C30.2711 3.23919 30.5251 3.49324 30.5251 3.87432L30.5251 14.6716C30.5251 14.9892 30.4616 15.2432 30.3981 15.4973C29.763 14.9892 28.9373 14.6716 27.9846 14.6716L25.444 14.6716L25.444 5.14459L25.444 3.87432ZM19.7278 4.50946L23.5386 4.50946C23.9197 4.50946 24.1738 4.76351 24.1738 5.14459L24.1738 14.6716L19.0927 14.6716L19.0927 5.14459C19.0927 4.76351 19.3467 4.50946 19.7278 4.50946ZM41.9575 30.2959C40.8143 30.9946 40.0521 32.2649 40.0521 33.6622L40.0521 35.5676L18.4576 35.5676L18.4576 32.9635C18.4576 32.0743 18.14 31.1851 17.5684 30.4865L15.917 28.5176C15.5359 28.073 15.2819 27.4378 15.2819 26.8027L15.2819 18.5459C15.2819 17.0851 16.4886 15.9419 17.8859 15.9419L27.9846 15.9419C29.3819 15.9419 30.5251 17.0851 30.5251 18.4824C30.5251 19.8797 29.3819 21.023 27.9846 21.023L20.363 21.023C20.0454 21.023 19.7278 21.277 19.7278 21.6581C19.7278 21.9757 19.9819 22.2932 20.2994 22.2932C20.617 22.2932 27.9846 22.9919 27.9846 31.1851C27.9846 31.5662 28.2386 31.8203 28.6197 31.8203C29.0008 31.8203 29.2548 31.5662 29.2548 31.1851C29.2548 26.1041 26.7143 23.5635 24.3643 22.2932L27.9846 22.2932C30.0805 22.2932 31.7954 20.5784 31.7954 18.4824C31.7954 18.1013 31.7319 17.7203 31.6048 17.3392C32.3035 18.0378 33.2562 18.4824 34.3359 18.4824C35.3521 18.4824 36.3048 18.1014 37.0035 17.4027C37.3846 19.1176 38.9089 20.3878 40.6873 20.3878C41.64 20.3878 42.5292 20.0068 43.2278 19.4351L43.2278 28.073C43.2278 28.9622 42.7197 29.8514 41.9575 30.2959Z"
+                      fill="#FFF" />
+                  </svg>
+                </div>
+                <h5 class="fs-5">A Chance to get absorbed into our
+                  in-house Tech Consultancy</h5>
+                <p>Show your skills during the bootcamp & you might just land a
+                  spot in TechSwamy’s In-house Consultancy.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
     </div>
-      </div>
-      </div>
-      </div>
+  </section>
 
-      <div class="tailored__item">
-      <div class="row align-items-center">
-      <div class="col-lg-4 col-md-4 col-sm-12">
-      <div class="image-box p-3 position-relative">
-      <figure class="image zindex2" data-tilt data-tilt-startX="0" data-tilt-startY="0">
-      <a href="#"><img class="img-fluid shadow" src="images/CareerThumb.webp" alt=""/></a></figure>
+  <section class="position-relative tailored-section py-5">
+    <div class="container">
+      <div class="widget-title mb-4">
+        <h2 class="fs-1 text-red title-anim">Our Courses Are Tailored For:</h2>
+      </div>
+      <div class="px-5">
+        <div class="owl-carousel owl-theme mt-5" id="courses-slider">
+          <div class="tailored__item">
+            <div class="row align-items-center">
+              <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="image-box p-3 position-relative">
+                  <figure class="image zindex2" data-tilt data-tilt-startX="0" data-tilt-startY="0">
+                    <a href="#"><img class="img-fluid shadow" src="images/SoftwareThumb.webp" alt="" /></a>
+                  </figure>
+                </div>
+              </div>
+
+              <div class="col-lg-8 col-md-8 col-sm-12">
+                <div class="tailored__content">
+                  <h5 class="mb-3 fs-3">Software Engineers</h5>
+                  <p>Propel your career forward by upskilling in the latest technologies, ensuring you remain
+                    competitive in the fast-paced and ever-evolving software industry.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tailored__item">
+            <div class="row align-items-center">
+              <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="image-box p-3 position-relative">
+                  <figure class="image zindex2" data-tilt data-tilt-startX="0" data-tilt-startY="0">
+                    <a href="#"><img class="img-fluid shadow" src="images/GraduatesThumb.webp" alt="" /></a>
+                  </figure>
+                </div>
+              </div>
+
+              <div class="col-lg-8 col-md-8 col-sm-12">
+                <div class="tailored__content">
+                  <h5 class="mb-3 fs-3">Recent Graduates</h5>
+                  <p>Bridge the gap between academia and industry with practical training and hands-on projects to
+                    kickstart your career journey.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tailored__item">
+            <div class="row align-items-center">
+              <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="image-box p-3 position-relative">
+                  <figure class="image zindex2" data-tilt data-tilt-startX="0" data-tilt-startY="0">
+                    <a href="#"><img class="img-fluid shadow" src="images/CareerThumb.webp" alt="" /></a>
+                  </figure>
+                </div>
+              </div>
+
+              <div class="col-lg-8 col-md-8 col-sm-12">
+                <div class="tailored__content">
+                  <h5 class="mb-3 fs-3">Career Changers</h5>
+                  <p>Make a seamless transition into a rewarding career in technology by acquiring the essential skills
+                    and knowledge needed for success.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tailored__item">
+            <div class="row align-items-center">
+              <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="image-box p-3 position-relative">
+                  <figure class="image zindex2" data-tilt data-tilt-startX="0" data-tilt-startY="0">
+                    <a href="#"><img class="img-fluid shadow" src="images/SeekingThumb.webp" alt="" /></a>
+                  </figure>
+                </div>
+              </div>
+
+              <div class="col-lg-8 col-md-8 col-sm-12">
+                <div class="tailored__content">
+                  <h5 class="mb-3 fs-3">Final Year Students Seeking Excellence</h5>
+                  <p>Get ahead of your peers with a curriculum
+                    tailored for immediate job readiness!
+                    Build a solid portfolio to showcase during
+                    campus placements and win the leverage to
+                    grab the highest paid role!
+
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </div>
-      </div>
-
-      <div class="col-lg-8 col-md-8 col-sm-12">
-        <div class="tailored__content">
-      <h5 class="mb-3 fs-3">Career Changers</h5>
-      <p>Make a seamless transition into a rewarding career in technology by acquiring the essential skills and knowledge needed for success.
-</p>
-</div>
-      </div>
-      </div>
-      </div>
-
-      <div class="tailored__item">
-      <div class="row align-items-center">
-      <div class="col-lg-4 col-md-4 col-sm-12">
-      <div class="image-box p-3 position-relative">
-      <figure class="image zindex2" data-tilt data-tilt-startX="0" data-tilt-startY="0">
-      <a href="#"><img class="img-fluid shadow" src="images/SeekingThumb.webp" alt=""/></a></figure>
-    </div>
-      </div>
-
-      <div class="col-lg-8 col-md-8 col-sm-12">
-        <div class="tailored__content">
-      <h5 class="mb-3 fs-3">Final Year Students Seeking Excellence</h5>
-      <p>Get ahead of your peers with a curriculum
-tailored for immediate job readiness!
-Build a solid portfolio to showcase during
-campus placements and win the leverage to
-grab the highest paid role!
-
-</p>
-</div>
-      </div>
-      </div>
-      </div>
-
-</div>
-</div>
-</div>
-</section>
+  </section>
 
 
-<section class="position-relative trainer-section">
-<div class="container">
- 
-<div class="row position-relative zIndex2 align-items-center">
-  <div class="widget-title mb-4 mobile text-center">
-    <h2 class="fs-1 text-red title-anim">Meet Your Trainer</h2>
-    </div>
-  <div class="col-lg-6 col-md-6 col-sm-12 text-center order-md-2">
-       <div class="image-box position-relative">
-      <figure class="image zindex2">
-      <a href="#"><img class="img-fluid" src="images/vijay.webp" alt=""/></a></figure>
-    </div>
-    </div>
+  <section class="position-relative trainer-section">
+    <div class="container">
 
-    <div class="col-lg-6 col-md-6 col-sm-12 order-md-1">
-    <div class="widget-title mb-4 desktop">
-    <h2 class="fs-1 text-red title-anim">Meet Your Trainer</h2>
-    </div>
+      <div class="row position-relative zIndex2 align-items-center">
+        <div class="widget-title mb-4 mobile text-center">
+          <h2 class="fs-1 text-red title-anim">Meet Your Trainer</h2>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 text-center order-md-2">
+          <div class="image-box position-relative">
+            <figure class="image zindex2">
+              <a href="#"><img class="img-fluid" src="images/vijay.webp" alt="" /></a>
+            </figure>
+          </div>
+        </div>
 
-      <div class="trainer__name ps-4">
-        <h6 class="fs-2">Vijay Rangan</h6>
-        <span style="" class="text-uppercase my-3 d-block fs-6 letter">Founder | CTO | Trainer | Mentor</span>
-     
-    <div class="owl-carousel owl-theme" id="meet-slider">
-      <div class="trainer__item">
-        <p class="text-justify">A self taught tech ninja, Vijay is a successful software engineer that has grabbed distinguished roles at top tech companies such as ThoughtWorks, GoPay, Nu Bank and Postman Labs for 10 years. He now runs his own software consulting company and training academy.</p>
-        <p class="text-justify mt-2">His passion for teaching stems from his own journey which made him realize that a strong knowledge foundation, practical application and mentorship are key ingredients to succeed in the tech industry, perhaps more than a degree.
+        <div class="col-lg-6 col-md-6 col-sm-12 order-md-1">
+          <div class="widget-title mb-4 desktop">
+            <h2 class="fs-1 text-red title-anim">Meet Your Trainer</h2>
+          </div>
 
-</p>
-<p class="text-justify mt-2">He is dedicated to helping others like him to succeed and earn what they truly deserve through Tech Swamy. As a trainer and mentor, he finds immense gratification in guiding budding engineers and empowering them to manifest all their dreams.
+          <div class="trainer__name ps-4">
+            <h6 class="fs-2">Vijay Rangan</h6>
+            <span style="" class="text-uppercase my-3 d-block fs-6 letter">Founder | CTO | Trainer | Mentor</span>
 
-</p>
-      </div>
+            <div class="owl-carousel owl-theme" id="meet-slider">
+              <div class="trainer__item">
+                <p class="text-justify">A self taught tech ninja, Vijay is a successful software engineer that has
+                  grabbed distinguished roles at top tech companies such as ThoughtWorks, GoPay, Nu Bank and Postman
+                  Labs for 10 years. He now runs his own software consulting company and training academy.</p>
+                <p class="text-justify mt-2">His passion for teaching stems from his own journey which made him realize
+                  that a strong knowledge foundation, practical application and mentorship are key ingredients to
+                  succeed in the tech industry, perhaps more than a degree.
 
-      <div class="trainer__item">
-        <h6 class="fs-5 mb-3">Key Achievements:</h6>
-        <ul class="listing">
-          <li>10 years of industry experience</li>
-          <li>AWS Certified Architect</li>
-          <li>Consulting CTO</li>
-          <li>Lead engineer at big-tech</li>
-          <li>Founder Tech Swamy Consulting</li>
-        </ul>
-      </div>
+                </p>
+                <p class="text-justify mt-2">He is dedicated to helping others like him to succeed and earn what they
+                  truly deserve through Tech Swamy. As a trainer and mentor, he finds immense gratification in guiding
+                  budding engineers and empowering them to manifest all their dreams.
 
-      <!-- <div class="trainer__item">
+                </p>
+              </div>
+
+              <div class="trainer__item">
+                <h6 class="fs-5 mb-3">Key Achievements:</h6>
+                <ul class="listing">
+                  <li>10 years of industry experience</li>
+                  <li>AWS Certified Architect</li>
+                  <li>Consulting CTO</li>
+                  <li>Lead engineer at big-tech</li>
+                  <li>Founder Tech Swamy Consulting</li>
+                </ul>
+              </div>
+
+              <!-- <div class="trainer__item">
         <p class="text-justify">Vijay's commitment to education stems from recognizing the paramount importance of a strong knowledge foundation, practical application, and mentorship in achieving success in the tech industry—qualities that, he believes, surpass the significance of a degree. </p>
         <p class="mt-2 text-justify">As a dedicated trainer and mentor, Vijay finds immense satisfaction in guiding engineers, helping them build solid foundations, and empowering them to realize their aspirations.
 At Tech Swamy, Vijay is devoted to assisting individuals in achieving their full potential and deserving success in the dynamic landscape of the tech industry.</p>
       </div> -->
 
-    </div>
-  </div>
-    </div>
-
-    
-</div>
-</div>
-</section>
-
-<section class="position-relative toppers-section py-5">
-<div class="container">
-<div class="widget-title text-center mb-5">
-<h2 class="fs-1 text-red title-anim">What Our Students Say</h2>
-</div>
-
-<div class="row">
-  <div class="col-lg-5 col-md-5 col-sm-12" data-tilt>
-    <img class="img-fluid" src="images/say-shapes.svg" alt=""/>
-  </div>
-
-  <div class="col-lg-7 col-md-7 col-sm-12 toppers__block position-relative">
-      <div class="owl-carousel owl-theme" id="toppers-silder">
-    <div class="toppers-item">
-     <p>The bootcamp was incredible! I was looking for an in-person bootcamp in Bangalore when i came across this one. What I loved the most was the personal attention Vijay paid to everyone in the cohort of just 30 students that we don't otherwise get in online courses. I gained practical skills and made valuable connections with fellow students. Highly recommend!</p>
-
-     <h6 class="fs-5">Ankur H</h6>
-    </div>
-
-    <div class="toppers-item">
-     <p>Vijay is an excellent teacher. He always explains the concept by using practical, real-world examples, and the learning is always hands-on. There's an assignment, that is designed based on the day's lesson. Followed by solving the doubts we encountered while solving the homework. Learning is project-based; we first decide what we want to build, and we trace back to doing all the required things to achieve it.</p>
-
-     <h6 class="fs-5">Abhilash R</h6>
-    </div>
-
-    <div class="toppers-item">
-     <p>As a mentor Vijay helped me navigate the complex world of software engineering and opened doors to incredible opportunities. He encouraged me on every step with actionable tips as well as motivating words that helped me steer my career to where it is today. Heartfelt gratitude</p>
-
-     <h6 class="fs-5">Prajwal A</h6>
-    </div>
-
-   
-   </div> 
-  </div>
-</div>
-</div>
-</section>
-
-
-<section class="position-relative light-col benefits-section py-5" >
-<div class="container">
-<div class="widget-title mb-4">
-<h2 class="fs-1 text-red title-anim">What Our Students Love About Us</h2>
-</div>
-
-<div class="owl-carousel text-center owl-theme" id="benefits-slider">
-    <div class="benefits-block">
-      <div class="benefits-item wow fadeInUp" data-tilt>
-      <div class="bene-icon">
-      <img class="img-fluid" src="images/Inter-icon.svg" alt=""/>
-      </div>
-      <div class="bene_content">
-      <h3 class="font-weight-700 fs-5">In-Person Trainings</h3>
-      </div>
-      </div>
-
-      <div class="benefits-item wow fadeInUp"  data-wow-delay="0ms" data-tilt>
-      <div class="bene-icon">
-      <img class="img-fluid" src="images/Inter-icon1.svg" alt=""/>
-      </div>
-      <div class="bene_content">
-      <h3 class="font-weight-700 fs-5">Industry Ready in 5 Months</h3>
-      </div>
-      </div>
-</div>
-
-<div class="benefits-block">
-  <div class="benefits-item wow fadeInUp"  data-wow-delay="300ms" data-tilt>
-    <div class="bene-icon">
-      <img class="img-fluid" src="images/Inter-icon2.svg" alt=""/>
-    </div>
-    <div class="bene_content">
-      <h3 class="font-weight-700 fs-5">World Class Mentorship</h3>
-    </div>
-  </div>
-
-  <div class="benefits-item wow fadeInUp"  data-wow-delay="300ms" data-tilt>
-    <div class="bene-icon">
-      <img class="img-fluid" src="images/Inter-icon3.svg" alt=""/>
-    </div>
-    <div class="bene_content">
-      <h3 class="font-weight-700 fs-5">Career Guidance/Support</h3>
-    </div>
-  </div>
-</div>
-
-<div class="benefits-block">
-  <div class="benefits-item wow fadeInUp"  data-wow-delay="600ms" data-tilt>
-    <div class="bene-icon">
-      <img class="img-fluid" src="images/Inter-icon4.svg" alt=""/>
-    </div>
-    <div class="bene_content">
-      <h3 class="font-weight-700 fs-5">Students Community</h3>
-    </div>
-  </div>
-   <div class="benefits-item wow fadeInUp"  data-wow-delay="600ms" data-tilt>
-    <div class="bene-icon">
-      <img class="img-fluid" src="images/Inter-icon5.svg" alt=""/>
-    </div>
-    <div class="bene_content">
-      <h3 class="font-weight-700 fs-5">Interview Preparation</h3>
-    </div>
-  </div>
-</div>
-</div>
-</div>
-</section>
-
-
-
-<section class="position-relative scholorships-section py-5">
-<div class="container">
-<div class="row align-items-center position-relative zIndex2">
-  <div class="col-lg-6 col-md-6 col-sm-12 text-center position-relative desktop order-md-2">
-    <div class="ready-vector position-relative" data-tilt>
-       <img class="img-fluid" src="images/Scholorships.webp" alt=""/>
-    </div>
-  </div>
-
-  <div class="col-lg-6 col-md-6 col-sm-12 order-md-1">
-    <div class="widget-title wow fadeInUp">
-<h2 class="fs-1 text-red title-anim mb-3">Scholarships</h2>
-<p class="my-4">At Tech Swamy, we believe that talent knows no bounds, and financial constraints should never hinder the pursuit of knowledge and growth. We encourage applications from:</p>
-</div>
-
-   <div class="eligible__md">
-     <div class="d-flex eligible_item wow fadeInUp" data-wow-delay="300ms">
-        <div class="ele_icon">
-          <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M36.0002 2H34.0002C23.0628 2 14.1503 10.825 14.0003 21.725L8.33775 31.425C7.67525 32.5625 8.06275 34.0125 9.18775 34.675C9.55025 34.8875 9.96275 35 10.3878 35H14.0003V45C14.0003 47.7625 16.2378 50 19.0003 50H21.0003V62H23.0003V49C23.0003 48.45 22.5503 48 22.0003 48H19.0003C17.3503 48 16.0003 46.65 16.0003 45V34C16.0003 33.45 15.5503 33 15.0003 33H10.4003C10.1878 33 10.0253 32.8375 10.0253 32.625C10.0253 32.5625 10.0378 32.4875 10.0753 32.4375L15.8753 22.5C15.9628 22.35 16.0128 22.175 16.0128 22C16.0128 12.075 24.0878 4 34.0128 4H36.0128C45.9378 4 54.0127 12.075 54.0127 22C54.0127 31.3375 50.3003 40.3 43.7002 46.9L41.3127 49.2875C41.1252 49.475 41.0252 49.725 41.0252 50V62H43.0252V50.4125L45.1252 48.3125C52.0752 41.3375 56.0002 31.875 56.0002 22C56.0002 10.975 47.0252 2 36.0002 2Z" fill="#F5185A"/>
-<path d="M33.9996 21.5875L28.2871 27.3L29.6996 28.7125L35.6996 22.7125C35.8871 22.525 35.9871 22.275 35.9871 22V12H33.9871V21.5875H33.9996Z" fill="#F5185A"/>
-<path d="M47 19H38V21H47V19Z" fill="#F5185A"/>
-<path d="M49 23H41V25H49V23Z" fill="#F5185A"/>
-<path d="M51 27H44V29H51V27Z" fill="#F5185A"/>
-<path d="M41 36.6626C41 35.8626 41.3125 35.1001 41.875 34.5376L44.9 31.5126L43.4875 30.1001L40.4625 33.1251C40.2 33.3876 39.9625 33.6876 39.7625 34.0001H30.2375C30.0375 33.6876 29.8 33.3876 29.5375 33.1251L26.5125 30.1001C24.25 27.8501 22.9875 24.8001 23 21.6126V21.0001C23 14.3751 28.375 9.00012 35 9.00012C40.2 9.00012 44.8125 12.3501 46.4125 17.3126L48.3125 16.7001C45.9375 9.33762 38.0375 5.31262 30.675 7.68762C24.9 9.56262 20.9875 14.9376 20.9875 21.0126V21.6251C20.975 25.3376 22.45 28.9001 25.0875 31.5251L28.1125 34.5501C28.675 35.1126 28.9875 35.8751 28.9875 36.6751V41.0001C28.9875 42.6501 30.3375 44.0001 31.9875 44.0001H37.9875C39.6375 44.0001 40.9875 42.6501 40.9875 41.0001V36.6626H41ZM39 41.0001C39 41.5501 38.55 42.0001 38 42.0001H32C31.45 42.0001 31 41.5501 31 41.0001V40.0001H39V41.0001ZM39 36.6626V38.0001H31V36.6626C31 36.4376 30.9875 36.2251 30.95 36.0001H39.0375C39.0125 36.2126 39 36.4376 39 36.6626Z" fill="#F5185A"/>
-</svg>
-
+            </div>
+          </div>
         </div>
-       <div class="eligible_content ps-3">
-         <h4 class="font-weight-700 mb-2 fs-5">Passionate Learners</h4>
-         <p>Individuals who have a genuine passion for technology and a commitment to continuous learning.</p>
-       </div>
-     </div>
 
-     <div class="d-flex eligible_item wow fadeInUp" data-wow-delay="600ms">
-        <div class="ele_icon">
-          <svg width="64" height="65" viewBox="0 0 64 65" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M18.0119 22.2876C18.0119 24.4415 16.2571 26.1962 14.1021 26.1962C11.9474 26.1962 10.1935 24.4418 10.1935 22.2876C10.1935 20.1328 11.9481 18.3784 14.1021 18.3784C16.2565 18.3784 18.0119 20.1325 18.0119 22.2876Z" stroke="#F5185A" stroke-width="1.5"/>
-<path d="M10.7759 47.5985V47.556L10.7711 47.5137L8.92721 31.3183C8.94454 30.2134 9.80221 29.3892 10.8297 29.3892H17.3744C18.4129 29.3892 19.2597 30.2241 19.28 31.2561L17.4304 47.5761L17.4256 47.6189L17.4257 47.662C17.4274 48.6378 16.5848 49.5045 15.5222 49.5045H12.6832C11.632 49.5045 10.7759 48.6488 10.7759 47.5985Z" stroke="#F5185A" stroke-width="1.5"/>
-<path d="M37.1417 22.2878V22.2876C37.1417 20.1327 38.8956 18.3784 41.0502 18.3784C43.2057 18.3784 44.9601 20.1324 44.9601 22.2876C44.9601 24.4417 43.2063 26.1962 41.0502 26.1962C38.8954 26.1962 37.1411 24.4417 37.1417 22.2878Z" stroke="#F5185A" stroke-width="1.5"/>
-<path d="M48.1802 9.82227C50.3343 9.82227 52.0888 11.5761 52.0888 13.7315C52.0888 15.886 50.3339 17.64 48.1796 17.64C46.0251 17.64 44.2697 15.8859 44.2697 13.7315C44.2697 11.5771 46.0258 9.82227 48.1802 9.82227Z" stroke="#F5185A" stroke-width="1.5"/>
-<path d="M37.7254 47.5983V47.5557L37.7205 47.5134L35.8754 31.3181C35.8933 30.2131 36.7511 29.3889 37.7786 29.3889H44.3238C45.3599 29.3889 46.2074 30.2233 46.2288 31.2562L44.378 47.5758L44.3731 47.6188L44.3732 47.6621C44.3754 48.6376 43.5331 49.5043 42.4704 49.5043H39.6314C38.5806 49.5043 37.7254 48.649 37.7254 47.5983Z" stroke="#F5185A" stroke-width="1.5"/>
-<path d="M55.3091 26.1957C53.155 26.1957 51.4006 24.4418 51.4006 22.2871C51.4006 20.1322 53.1545 18.3779 55.3091 18.3779C57.4647 18.3779 59.219 20.1319 59.219 22.2871C59.219 24.4412 57.4652 26.1957 55.3091 26.1957Z" stroke="#F5185A" stroke-width="1.5"/>
-<path d="M51.9829 47.5985V47.556L51.9781 47.5137L50.1342 31.3181C50.151 30.214 51.0093 29.3892 52.0374 29.3892H58.5808C59.6185 29.3892 60.4663 30.224 60.4876 31.2564L58.6368 47.5761L58.632 47.6191L58.6321 47.6623C58.6343 48.6378 57.7919 49.5045 56.7293 49.5045H53.8902C52.839 49.5045 51.9829 48.6488 51.9829 47.5985Z" stroke="#F5185A" stroke-width="1.5"/>
-<path d="M23.1027 11.6578H5.104C3.75723 11.6578 2.66288 12.7528 2.66288 14.0989V53.5869C2.66288 54.9325 3.75794 56.0268 5.104 56.0268H23.1027C24.4494 56.0268 25.5438 54.9318 25.5438 53.5869V14.0989C25.5438 12.7528 24.4488 11.6578 23.1027 11.6578ZM24.7038 53.5876C24.7038 54.4698 23.9852 55.1874 23.1027 55.1874H5.104C4.2203 55.1874 3.50288 54.4699 3.50288 53.5876V14.0996C3.50288 13.2172 4.2204 12.4985 5.104 12.4985H23.1027C23.9851 12.4985 24.7038 13.2172 24.7038 14.0996V53.5876Z" fill="#F5185A" stroke="#F5185A" stroke-width="0.2"/>
-</svg>
 
+      </div>
+    </div>
+  </section>
+
+  <section class="position-relative toppers-section py-5">
+    <div class="container">
+      <div class="widget-title text-center mb-5">
+        <h2 class="fs-1 text-red title-anim">What Our Students Say</h2>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-5 col-md-5 col-sm-12" data-tilt>
+          <img class="img-fluid" src="images/say-shapes.svg" alt="" />
         </div>
-       <div class="eligible_content ps-3">
-         <h4 class="font-weight-700 mb-2 fs-5">Underrepresented Communities</h4>
-         <p>We are committed to fostering diversity and inclusion. If you belong to an underrepresented group in the tech industry, we welcome your application.</p>
-       </div>
-     </div>
 
-     
-   </div>
-</div>
-</div>
-</div>
-</section>
+        <div class="col-lg-7 col-md-7 col-sm-12 toppers__block position-relative">
+          <div class="owl-carousel owl-theme" id="toppers-silder">
+            <div class="toppers-item">
+              <p>The bootcamp was incredible! I was looking for an in-person bootcamp in Bangalore when i came across
+                this one. What I loved the most was the personal attention Vijay paid to everyone in the cohort of just
+                30 students that we don't otherwise get in online courses. I gained practical skills and made valuable
+                connections with fellow students. Highly recommend!</p>
 
+              <h6 class="fs-5">Ankur H</h6>
+            </div>
 
+            <div class="toppers-item">
+              <p>Vijay is an excellent teacher. He always explains the concept by using practical, real-world examples,
+                and the learning is always hands-on. There's an assignment, that is designed based on the day's lesson.
+                Followed by solving the doubts we encountered while solving the homework. Learning is project-based; we
+                first decide what we want to build, and we trace back to doing all the required things to achieve it.
+              </p>
 
-<section class="position-relative text-center light-col py-5">
-<div class="container">
-<div class="widget-title">
-<h2 class="font-weight-700 fs-2 text-red title-anim">Your Gateway To Success At Unimagined<br/> 
-Levels- Get Started Today!</h2>
-</div>
-</div>
-</section>
-<!-- footer -->
-<footer class="footer position-relative py-3 text-center">
-<div class="container">
-<p class="fsize14 text-white">© Copyright 2024-25 - Tech Swamy. All rights reserved.</p>
-</div>
-</footer>
-<a href="#" id="back-top" title="Back To Top"></a> 
-<div class="sideNavi" id="sideNavi" style="display: none;">
-<div class="sideNavi-flex">
-<div class="sideNavi-item">
-<a class="downbg" data-fancybox data-touch="false" href="#enquirepop">Enquire Now</a></div>
-</div>
-</div>
+              <h6 class="fs-5">Abhilash R</h6>
+            </div>
 
-<!-- jQuery plugins --> 
-<script src="js/bootstrap.bundle.min.js"></script> 
-<script src="css/carousel/owl.carousel.min.js"></script>
-<script src="js/wow.min.js"></script>
-<script src="js/vanilla-tilt.min.js"></script>
-<script src="js/jquery.parallax.js"></script>
-<script src="js/SplitText.min.js"></script>
-<script src="js/gsap.min.js"></script>
-<script src="js/jquery.fancybox.min.js"></script>
-<script src="js/custom.js"></script> 
-<!-- validationEngine FORM START --> 
-<script src="js/form/jquery.validationEngine.js"></script> 
-<script src="js/form/jquery.validationEngine-en.js"></script> 
-<script src="js/form/script.js"></script> 
-<script src="js/form/state.js"></script>
+            <div class="toppers-item">
+              <p>As a mentor Vijay helped me navigate the complex world of software engineering and opened doors to
+                incredible opportunities. He encouraged me on every step with actionable tips as well as motivating
+                words that helped me steer my career to where it is today. Heartfelt gratitude</p>
+
+              <h6 class="fs-5">Prajwal A</h6>
+            </div>
 
 
-<div id="enquirepop">
-<h5 class="fs-4 text-white mb-4">Enquire Now</h5>
-<form id="formID" name="career-form" method="post"  action="https://uniproeducation.com/lp/tech-swamy-2023-save.php">
-<div class="formCareerfid">
-<div class="form-group">
-<input name="name" class="form-control validate[required, custom[name]]" placeholder="Name*" data-errormessage-value-missing="*Name is required!" type="text" >
-</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
-<div class="form-group">
-<input name="email" class="form-control validate[required, custom[email]]" placeholder="Email*" maxlength="30" data-errormessage-value-missing="* Email is required!" type="email" />
-</div>
-<div class="form-group">
-<input name="phone" id="phonee" maxlength="10" placeholder="Mobile*" class="form-control validate[required, custom[phone]]" data-errormessage-value-missing="* Mobile is required!" type="tel" />
-</div>
+  <section class="position-relative light-col benefits-section py-5">
+    <div class="container">
+      <div class="widget-title mb-4">
+        <h2 class="fs-1 text-red title-anim">What Our Students Love About Us</h2>
+      </div>
+
+      <div class="owl-carousel text-center owl-theme" id="benefits-slider">
+        <div class="benefits-block">
+          <div class="benefits-item wow fadeInUp" data-tilt>
+            <div class="bene-icon">
+              <img class="img-fluid" src="images/Inter-icon.svg" alt="" />
+            </div>
+            <div class="bene_content">
+              <h3 class="font-weight-700 fs-5">In-Person Trainings</h3>
+            </div>
+          </div>
+
+          <div class="benefits-item wow fadeInUp" data-wow-delay="0ms" data-tilt>
+            <div class="bene-icon">
+              <img class="img-fluid" src="images/Inter-icon1.svg" alt="" />
+            </div>
+            <div class="bene_content">
+              <h3 class="font-weight-700 fs-5">Industry Ready in 5 Months</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="benefits-block">
+          <div class="benefits-item wow fadeInUp" data-wow-delay="300ms" data-tilt>
+            <div class="bene-icon">
+              <img class="img-fluid" src="images/Inter-icon2.svg" alt="" />
+            </div>
+            <div class="bene_content">
+              <h3 class="font-weight-700 fs-5">World Class Mentorship</h3>
+            </div>
+          </div>
+
+          <div class="benefits-item wow fadeInUp" data-wow-delay="300ms" data-tilt>
+            <div class="bene-icon">
+              <img class="img-fluid" src="images/Inter-icon3.svg" alt="" />
+            </div>
+            <div class="bene_content">
+              <h3 class="font-weight-700 fs-5">Career Guidance/Support</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="benefits-block">
+          <div class="benefits-item wow fadeInUp" data-wow-delay="600ms" data-tilt>
+            <div class="bene-icon">
+              <img class="img-fluid" src="images/Inter-icon4.svg" alt="" />
+            </div>
+            <div class="bene_content">
+              <h3 class="font-weight-700 fs-5">Students Community</h3>
+            </div>
+          </div>
+          <div class="benefits-item wow fadeInUp" data-wow-delay="600ms" data-tilt>
+            <div class="bene-icon">
+              <img class="img-fluid" src="images/Inter-icon5.svg" alt="" />
+            </div>
+            <div class="bene_content">
+              <h3 class="font-weight-700 fs-5">Interview Preparation</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="position-relative scholorships-section py-5">
+    <div class="container">
+      <div class="row align-items-center position-relative zIndex2">
+        <div class="col-lg-6 col-md-6 col-sm-12 text-center position-relative desktop order-md-2">
+          <div class="ready-vector position-relative" data-tilt>
+            <img class="img-fluid" src="images/Scholorships.webp" alt="" />
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-12 order-md-1">
+          <div class="widget-title wow fadeInUp">
+            <h2 class="fs-1 text-red title-anim mb-3">Scholarships</h2>
+            <p class="my-4">At Tech Swamy, we believe that talent knows no bounds, and financial constraints should
+              never hinder the pursuit of knowledge and growth. We encourage applications from:</p>
+          </div>
+
+          <div class="eligible__md">
+            <div class="d-flex eligible_item wow fadeInUp" data-wow-delay="300ms">
+              <div class="ele_icon">
+                <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M36.0002 2H34.0002C23.0628 2 14.1503 10.825 14.0003 21.725L8.33775 31.425C7.67525 32.5625 8.06275 34.0125 9.18775 34.675C9.55025 34.8875 9.96275 35 10.3878 35H14.0003V45C14.0003 47.7625 16.2378 50 19.0003 50H21.0003V62H23.0003V49C23.0003 48.45 22.5503 48 22.0003 48H19.0003C17.3503 48 16.0003 46.65 16.0003 45V34C16.0003 33.45 15.5503 33 15.0003 33H10.4003C10.1878 33 10.0253 32.8375 10.0253 32.625C10.0253 32.5625 10.0378 32.4875 10.0753 32.4375L15.8753 22.5C15.9628 22.35 16.0128 22.175 16.0128 22C16.0128 12.075 24.0878 4 34.0128 4H36.0128C45.9378 4 54.0127 12.075 54.0127 22C54.0127 31.3375 50.3003 40.3 43.7002 46.9L41.3127 49.2875C41.1252 49.475 41.0252 49.725 41.0252 50V62H43.0252V50.4125L45.1252 48.3125C52.0752 41.3375 56.0002 31.875 56.0002 22C56.0002 10.975 47.0252 2 36.0002 2Z"
+                    fill="#F5185A" />
+                  <path
+                    d="M33.9996 21.5875L28.2871 27.3L29.6996 28.7125L35.6996 22.7125C35.8871 22.525 35.9871 22.275 35.9871 22V12H33.9871V21.5875H33.9996Z"
+                    fill="#F5185A" />
+                  <path d="M47 19H38V21H47V19Z" fill="#F5185A" />
+                  <path d="M49 23H41V25H49V23Z" fill="#F5185A" />
+                  <path d="M51 27H44V29H51V27Z" fill="#F5185A" />
+                  <path
+                    d="M41 36.6626C41 35.8626 41.3125 35.1001 41.875 34.5376L44.9 31.5126L43.4875 30.1001L40.4625 33.1251C40.2 33.3876 39.9625 33.6876 39.7625 34.0001H30.2375C30.0375 33.6876 29.8 33.3876 29.5375 33.1251L26.5125 30.1001C24.25 27.8501 22.9875 24.8001 23 21.6126V21.0001C23 14.3751 28.375 9.00012 35 9.00012C40.2 9.00012 44.8125 12.3501 46.4125 17.3126L48.3125 16.7001C45.9375 9.33762 38.0375 5.31262 30.675 7.68762C24.9 9.56262 20.9875 14.9376 20.9875 21.0126V21.6251C20.975 25.3376 22.45 28.9001 25.0875 31.5251L28.1125 34.5501C28.675 35.1126 28.9875 35.8751 28.9875 36.6751V41.0001C28.9875 42.6501 30.3375 44.0001 31.9875 44.0001H37.9875C39.6375 44.0001 40.9875 42.6501 40.9875 41.0001V36.6626H41ZM39 41.0001C39 41.5501 38.55 42.0001 38 42.0001H32C31.45 42.0001 31 41.5501 31 41.0001V40.0001H39V41.0001ZM39 36.6626V38.0001H31V36.6626C31 36.4376 30.9875 36.2251 30.95 36.0001H39.0375C39.0125 36.2126 39 36.4376 39 36.6626Z"
+                    fill="#F5185A" />
+                </svg>
+
+              </div>
+              <div class="eligible_content ps-3">
+                <h4 class="font-weight-700 mb-2 fs-5">Passionate Learners</h4>
+                <p>Individuals who have a genuine passion for technology and a commitment to continuous learning.</p>
+              </div>
+            </div>
+
+            <div class="d-flex eligible_item wow fadeInUp" data-wow-delay="600ms">
+              <div class="ele_icon">
+                <svg width="64" height="65" viewBox="0 0 64 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M18.0119 22.2876C18.0119 24.4415 16.2571 26.1962 14.1021 26.1962C11.9474 26.1962 10.1935 24.4418 10.1935 22.2876C10.1935 20.1328 11.9481 18.3784 14.1021 18.3784C16.2565 18.3784 18.0119 20.1325 18.0119 22.2876Z"
+                    stroke="#F5185A" stroke-width="1.5" />
+                  <path
+                    d="M10.7759 47.5985V47.556L10.7711 47.5137L8.92721 31.3183C8.94454 30.2134 9.80221 29.3892 10.8297 29.3892H17.3744C18.4129 29.3892 19.2597 30.2241 19.28 31.2561L17.4304 47.5761L17.4256 47.6189L17.4257 47.662C17.4274 48.6378 16.5848 49.5045 15.5222 49.5045H12.6832C11.632 49.5045 10.7759 48.6488 10.7759 47.5985Z"
+                    stroke="#F5185A" stroke-width="1.5" />
+                  <path
+                    d="M37.1417 22.2878V22.2876C37.1417 20.1327 38.8956 18.3784 41.0502 18.3784C43.2057 18.3784 44.9601 20.1324 44.9601 22.2876C44.9601 24.4417 43.2063 26.1962 41.0502 26.1962C38.8954 26.1962 37.1411 24.4417 37.1417 22.2878Z"
+                    stroke="#F5185A" stroke-width="1.5" />
+                  <path
+                    d="M48.1802 9.82227C50.3343 9.82227 52.0888 11.5761 52.0888 13.7315C52.0888 15.886 50.3339 17.64 48.1796 17.64C46.0251 17.64 44.2697 15.8859 44.2697 13.7315C44.2697 11.5771 46.0258 9.82227 48.1802 9.82227Z"
+                    stroke="#F5185A" stroke-width="1.5" />
+                  <path
+                    d="M37.7254 47.5983V47.5557L37.7205 47.5134L35.8754 31.3181C35.8933 30.2131 36.7511 29.3889 37.7786 29.3889H44.3238C45.3599 29.3889 46.2074 30.2233 46.2288 31.2562L44.378 47.5758L44.3731 47.6188L44.3732 47.6621C44.3754 48.6376 43.5331 49.5043 42.4704 49.5043H39.6314C38.5806 49.5043 37.7254 48.649 37.7254 47.5983Z"
+                    stroke="#F5185A" stroke-width="1.5" />
+                  <path
+                    d="M55.3091 26.1957C53.155 26.1957 51.4006 24.4418 51.4006 22.2871C51.4006 20.1322 53.1545 18.3779 55.3091 18.3779C57.4647 18.3779 59.219 20.1319 59.219 22.2871C59.219 24.4412 57.4652 26.1957 55.3091 26.1957Z"
+                    stroke="#F5185A" stroke-width="1.5" />
+                  <path
+                    d="M51.9829 47.5985V47.556L51.9781 47.5137L50.1342 31.3181C50.151 30.214 51.0093 29.3892 52.0374 29.3892H58.5808C59.6185 29.3892 60.4663 30.224 60.4876 31.2564L58.6368 47.5761L58.632 47.6191L58.6321 47.6623C58.6343 48.6378 57.7919 49.5045 56.7293 49.5045H53.8902C52.839 49.5045 51.9829 48.6488 51.9829 47.5985Z"
+                    stroke="#F5185A" stroke-width="1.5" />
+                  <path
+                    d="M23.1027 11.6578H5.104C3.75723 11.6578 2.66288 12.7528 2.66288 14.0989V53.5869C2.66288 54.9325 3.75794 56.0268 5.104 56.0268H23.1027C24.4494 56.0268 25.5438 54.9318 25.5438 53.5869V14.0989C25.5438 12.7528 24.4488 11.6578 23.1027 11.6578ZM24.7038 53.5876C24.7038 54.4698 23.9852 55.1874 23.1027 55.1874H5.104C4.2203 55.1874 3.50288 54.4699 3.50288 53.5876V14.0996C3.50288 13.2172 4.2204 12.4985 5.104 12.4985H23.1027C23.9851 12.4985 24.7038 13.2172 24.7038 14.0996V53.5876Z"
+                    fill="#F5185A" stroke="#F5185A" stroke-width="0.2" />
+                </svg>
+
+              </div>
+              <div class="eligible_content ps-3">
+                <h4 class="font-weight-700 mb-2 fs-5">Underrepresented Communities</h4>
+                <p>We are committed to fostering diversity and inclusion. If you belong to an underrepresented group in
+                  the tech industry, we welcome your application.</p>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="position-relative text-center light-col py-5">
+    <div class="container">
+      <div class="widget-title">
+        <h2 class="font-weight-700 fs-2 text-red title-anim">Your Gateway To Success At Unimagined<br />
+          Levels- Get Started Today!</h2>
+      </div>
+    </div>
+  </section>
+  <!-- footer -->
+  <footer class="footer position-relative py-3 text-center">
+    <div class="container">
+      <p class="fsize14 text-white">
+        © Copyright 2024-25 - Tech Swamy. All rights reserved.
+        <a href="/TechSwamyTermsAndConditions.html">Terms & Condidtion</a>
+        <a href="/TechSwamyRefundPolicy.html">Refund Plic</a>
+      </p>
+    </div>
+  </footer>
+  <a href="#" id="back-top" title="Back To Top"></a>
+  <div class="sideNavi" id="sideNavi" style="display: none;">
+    <div class="sideNavi-flex">
+      <div class="sideNavi-item">
+        <a class="downbg" data-fancybox data-touch="false" href="#enquirepop">Enquire Now</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery plugins -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="css/carousel/owl.carousel.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/vanilla-tilt.min.js"></script>
+  <script src="js/jquery.parallax.js"></script>
+  <script src="js/SplitText.min.js"></script>
+  <script src="js/gsap.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/custom.js"></script>
+  <!-- validationEngine FORM START -->
+  <script src="js/form/jquery.validationEngine.js"></script>
+  <script src="js/form/jquery.validationEngine-en.js"></script>
+  <script src="js/form/script.js"></script>
+  <script src="js/form/state.js"></script>
+
+
+  <div id="enquirepop">
+    <h5 class="fs-4 text-white mb-4">Enquire Now</h5>
+    <form id="formID" name="career-form" method="post" action="https://uniproeducation.com/lp/tech-swamy-2023-save.php">
+      <div class="formCareerfid">
+        <div class="form-group">
+          <input name="name" class="form-control validate[required, custom[name]]" placeholder="Name*"
+            data-errormessage-value-missing="*Name is required!" type="text">
+        </div>
+
+
+        <div class="form-group">
+          <input name="email" class="form-control validate[required, custom[email]]" placeholder="Email*" maxlength="30"
+            data-errormessage-value-missing="* Email is required!" type="email" />
+        </div>
+        <div class="form-group">
+          <input name="phone" id="phonee" maxlength="10" placeholder="Mobile*"
+            class="form-control validate[required, custom[phone]]"
+            data-errormessage-value-missing="* Mobile is required!" type="tel" />
+        </div>
 
 
 
 
-<div class="contact-fild-box text-center">
-<div class="form-group">
-<input id="referrerid" name="referrer_name" type="hidden" value="">
-                          <input id="keyword" name="keyword" type="hidden" value="">
-                          <input id="network" name="network" type="hidden" value="">
-                          <input id="campaign_url" name="campaign_url" type="hidden" value="">
-                          <input id="campaign_name" name="campaign_name" type="hidden" value="">
-                          <input id="sourceId" name="source" type="hidden" value="">
-                          <input id="utm_medium" name="utm_medium" type="hidden" value="">    
-                          <input type="hidden" name="orderid" value="829">
-                          <input type="hidden" name="sitename" value="TechSwamy2024">
-<button id="btnSubmit" type="submit" class="btn btn_submit">Submit</button>
-</div>
-</div>
-</div>
-</form>
-</div>
+        <div class="contact-fild-box text-center">
+          <div class="form-group">
+            <input id="referrerid" name="referrer_name" type="hidden" value="">
+            <input id="keyword" name="keyword" type="hidden" value="">
+            <input id="network" name="network" type="hidden" value="">
+            <input id="campaign_url" name="campaign_url" type="hidden" value="">
+            <input id="campaign_name" name="campaign_name" type="hidden" value="">
+            <input id="sourceId" name="source" type="hidden" value="">
+            <input id="utm_medium" name="utm_medium" type="hidden" value="">
+            <input type="hidden" name="orderid" value="829">
+            <input type="hidden" name="sitename" value="TechSwamy2024">
+            <button id="btnSubmit" type="submit" class="btn btn_submit">Submit</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
 
-<div id="downloadpop">
-<h5 class="fs-4 text-white mb-4">Download Curriculum</h5>
-<form id="formID1" name="career-form" method="post"  action="https://uniproeducation.com/lp/tech-swamy-pdf-2023-save.php">
-<div class="formCareerfid">
-<div class="form-group">
-<input name="name" class="form-control validate[required, custom[name]]" placeholder="Name*" data-errormessage-value-missing="*Name is required!" type="text" >
-</div>
-
-
-<div class="form-group">
-<input name="email" class="form-control validate[required, custom[email]]" placeholder="Email*" maxlength="30" data-errormessage-value-missing="* Email is required!" type="email" />
-</div>
-<div class="form-group">
-<input name="phone" id="phone" maxlength="10" placeholder="Mobile*" class="form-control validate[required, custom[phone]]" data-errormessage-value-missing="* Mobile is required!" type="tel" />
-</div>
+  <div id="downloadpop">
+    <h5 class="fs-4 text-white mb-4">Download Curriculum</h5>
+    <form id="formID1" name="career-form" method="post"
+      action="https://uniproeducation.com/lp/tech-swamy-pdf-2023-save.php">
+      <div class="formCareerfid">
+        <div class="form-group">
+          <input name="name" class="form-control validate[required, custom[name]]" placeholder="Name*"
+            data-errormessage-value-missing="*Name is required!" type="text">
+        </div>
 
 
+        <div class="form-group">
+          <input name="email" class="form-control validate[required, custom[email]]" placeholder="Email*" maxlength="30"
+            data-errormessage-value-missing="* Email is required!" type="email" />
+        </div>
+        <div class="form-group">
+          <input name="phone" id="phone" maxlength="10" placeholder="Mobile*"
+            class="form-control validate[required, custom[phone]]"
+            data-errormessage-value-missing="* Mobile is required!" type="tel" />
+        </div>
 
 
-<div class="contact-fild-box text-center">
-<div class="form-group">
-<input id="referrerid1" name="referrer_name" type="hidden" value="">
-<input id="keyword1" name="keyword" type="hidden" value="">
-<input id="network1" name="network" type="hidden" value="">
-<input id="campaign_url1" name="campaign_url" type="hidden" value="">
-<input id="campaign_name1" name="campaign_name" type="hidden" value="">
-<input id="sourceId1" name="source" type="hidden" value="">
-<input id="utm_medium1" name="utm_medium" type="hidden" value="">    
-<input type="hidden" name="orderid" value="829">
-<input type="hidden" name="sitename" value="TechSwamy2024">
-<button id="btnSubmitt" type="submit" class="btn btn_submit">Download Curriculum</button>
-</div>
-</div>
-</div>
-</form>
-</div>
+
+
+        <div class="contact-fild-box text-center">
+          <div class="form-group">
+            <input id="referrerid1" name="referrer_name" type="hidden" value="">
+            <input id="keyword1" name="keyword" type="hidden" value="">
+            <input id="network1" name="network" type="hidden" value="">
+            <input id="campaign_url1" name="campaign_url" type="hidden" value="">
+            <input id="campaign_name1" name="campaign_name" type="hidden" value="">
+            <input id="sourceId1" name="source" type="hidden" value="">
+            <input id="utm_medium1" name="utm_medium" type="hidden" value="">
+            <input type="hidden" name="orderid" value="829">
+            <input type="hidden" name="sitename" value="TechSwamy2024">
+            <button id="btnSubmitt" type="submit" class="btn btn_submit">Download Curriculum</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
 </body>
+
 </html>
