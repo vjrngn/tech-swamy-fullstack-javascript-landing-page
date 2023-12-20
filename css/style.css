@@ -11,23 +11,23 @@
 /*== HEADER CSS START ==*/
 .paraxify{ background-attachment: fixed; background-position: center center; background-size: cover;}
 /*== BANNER CSS START ==*/
-.dsu-form { width: 340px; margin: 8rem auto 0; padding: 2.5rem 0; float: right; position: relative; z-index: 1; border-radius: 2rem; background-color: var(--bg-info);}
+.dsu-form { width: 340px; margin: 5rem auto 0; padding: 1.5rem 0; float: right; position: relative; z-index: 1; border-radius: 1rem; background-color: var(--bg-orange);}
 .frmBg { position: relative; text-align: center; padding: 0 0;}
 .frmBg .hr { border: 2px solid var(--bg-blue); margin: 0 auto; }
 .contact_fild { padding: 0.5rem 20px 0;}
 .contact-fild-box .form-control, 
-.contact-fild-box .form-select { font-size: 14px; color: var(--white-col); border: 1px solid var(--text-dark); border-radius: 0; background-color: transparent;
+.contact-fild-box .form-select { font-size: 14px; color: var(--text-dark); border: 0; border-radius: 0; background-color: var(--white-col);
      margin: 0 auto; padding: 10px 10px; height: auto;}
 .form-group { margin-bottom: 0px;}
 .btn_submit.btn__blue { background-color: var(--bg-purple);}
-.btn_submit { background-color: var(--text-dark); color: var(--white-col); font-size: 20px; border-radius: 2rem; padding: 5px 2rem; margin: 1rem 0;  }
+.btn_submit { background-color: var(--bg-red); color: var(--white-col); font-size: 20px; border-radius: 2rem; padding: 8px 2rem; width: 100%;  }
 .btn_submit:hover { color: var(--white-col);}
 .contact-fild-box { margin-bottom: var(--font); position: relative;}
 .contact-fild-box.text-center { margin-bottom: 0px;}
 .dsu-intro { position:relative; z-index: 2; }
 .dsu-addmission { margin-top: 13rem; display: block; padding: 0px;}
 .formIDfid { padding: 0 0px; }
-.contact-fild-box .form-control option { color: #000; }
+.contact-fild-box .form-control option, .contact-fild-box .form-select { color: var(--text-dark); !important; }
 .dsu-form .progress { background-color: var(--bg-blue); height: 2px; }
 /*== BANNER CSS end ==*/
 .bord-rt-left { position: absolute; left: 43%;top: 5rem;}
@@ -55,9 +55,9 @@ section { overflow: hidden; }
 
 [data-paroller-factor] { position: relative; z-index: 0;}
 .cloud_absolute3 { left: 0; top: 0; }
-.star_absolute { left: 43rem; top: 25%; z-index: 3; }
-.icon_absolute { left: 65rem; top: 18%; z-index: 1; }
-.boydv { top: 6rem; left: 32rem; z-index: 2;  }
+.star_absolute { left: 32rem; top: 16%; z-index: 3; }
+.icon_absolute { left: 55rem; top: 18%; z-index: 1; }
+.boydv { top: 8rem; left: 25rem; z-index: 2;  }
 .tailored__item .image-box img { position: relative; overflow: hidden; border-radius: 1.2rem; }
 .tailored__item .tailored__content { width: 70%; }
 .ticker_item { position: relative; overflow: hidden;  border-radius: 0.5rem; margin: 1.2rem 0;  }

@@ -2,12 +2,12 @@
 
 .bc-img01 { height: 100vh; }
 .girlsdv { left: 23rem; }
-.boydv { left: 38rem; }
+.boydv { left: 18rem; }
 .w-50 {
     width: 60%!important;
 }
-.icon_absolute { left: 70rem;}
-.star_absolute { left: 39rem;}
+.icon_absolute { left: 47rem; z-index: 5;}
+.star_absolute { left: 27rem;}
 .bord-rt-left { left: 42%;}
 .bc-img01:after { height: 65%;}
 }

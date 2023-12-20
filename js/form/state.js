@@ -905,7 +905,7 @@ else if (typevalue == 27)
 		}
 		else if (typevalue == 31)
 		{
-		document.getElementById("citypid").innerHTML="<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select Your City*</option><option value='Alipur Duar' >Alipur Duar</option>\
+		document.getElementById("citypid").innerHTML="<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select</option><option value='Alipur Duar' >Alipur Duar</option>\
 <option value='Arambagh' >Arambagh</option>\
 <option value='Asansol' >Asansol</option>\
 <option value='Ashoknagar Kalyangarh' >Ashoknagar Kalyangarh</option>\
@@ -928,7 +928,6 @@ else if (typevalue == 27)
 <option value='Binnaguri' >Binnaguri</option>\
 <option value='Bishnupur' >Bishnupur</option>\
 <option value='Bolpur' >Bolpur</option>\
-<option value='Kolkata' >Kolkata</option>\
 <option value='Chakdaha' >Chakdaha</option>\
 <option value='Champdani' >Champdani</option>\
 <option value='Chandannagar' >Chandannagar</option>\
@@ -966,6 +965,7 @@ else if (typevalue == 27)
 <option value='Kharagpur Railway Settlement' >Kharagpur Railway Settlement</option>\
 <option value='Khardaha' >Khardaha</option>\
 <option value='Kharia' >Kharia</option>\
+<option value='Kolkata' >Kolkata</option>\
 <option value='Koch Bihar' >Koch Bihar</option>\
 <option value='Konnagar' >Konnagar</option>\
 <option value='Krishnanagar' >Krishnanagar</option>\
@@ -1001,20 +1001,20 @@ else if (typevalue == 27)
 		}
 		else if (typevalue == 32)
 		{
-		document.getElementById("citypid").innerHTML="<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select Your City*</option><option value='Dadar-Nagar Haveli' >Dadar-Nagar Haveli</option></select>";
+		document.getElementById("citypid").innerHTML="<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select</option><option value='Dadar-Nagar Haveli' >Dadar-Nagar Haveli</option></select>";
 		}
 		else if (typevalue == 33)
 		{
-		document.getElementById("citypid").innerHTML="<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select Your City*</option><option value='Daman' >Daman</option>\
+		document.getElementById("citypid").innerHTML="<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select</option><option value='Daman' >Daman</option>\
 <option value='Diu' >Diu</option></select>";
 		}
 		else if (typevalue == 34)
 		{
-		document.getElementById("citypid").innerHTML="<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select Your City*</option><option value='Sikkim East'>Sikkim East</option><option value='Gangtok'>Gangtok</option><option value='Ghezing'>Ghezing</option><option value='Jorethang'>Jorethang</option><option value='Legship'>Legship</option><option value='Mangan'>Mangan</option><option value='Namchi'>Namchi</option></select>";
+		document.getElementById("citypid").innerHTML="<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select</option><option value='Sikkim East'>Sikkim East</option><option value='Gangtok'>Gangtok</option><option value='Ghezing'>Ghezing</option><option value='Jorethang'>Jorethang</option><option value='Legship'>Legship</option><option value='Mangan'>Mangan</option><option value='Namchi'>Namchi</option></select>";
 		}
 		else if (typevalue == 36)
 		{
-		document.getElementById("citypid").innerHTML="<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select Your City*</option>\
+		document.getElementById("citypid").innerHTML="<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select</option>\
 			<option value='Adilabad' >Adilabad</option>\
 			<option value='Bhadradri' >Bhadradri</option>\
 			<option value='Hyderabad' >Hyderabad</option>\

@@ -57,7 +57,7 @@ li { color: #1e1e1e; transition:all 0.5s ease; -webkit-transition:all 0.5s ease;
 
 /* Hero Section Slide */
 
-.bc-img01 { position: relative; background-color: var(--light-col); overflow: hidden; height: 95vh;}
+.bc-img01 { position: relative; background-color: var(--light-col); overflow: hidden; height: 90vh;}
 .bc-img01:after { position: absolute; content:""; width:50%; height: 70%; clip-path: polygon(15% 0, 100% 0%, 100% 100%, 0 100%); background-color: var(--bg-orange); top: 5rem; right: 0;  }
 
 .bc-img01:before { position: absolute; content:""; width:50%; height: 50%; right: -9rem; top: 25%; background-image: url(../images/Bnr-Vector.png); z-index:1; overflow: hidden; }
